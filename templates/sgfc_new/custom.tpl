@@ -15,7 +15,10 @@
         </div>
     </div>
     <br>
-    <img src="{image-1}">
+    {*<img src="{image-1}">*}
+    <div class="new_post_img">
+        [full-link]<img src="{imagelarge-1}">[/full-link]
+    </div>
     <h2></h2>
     <div class="row">
         <div class="col-lg-4">
@@ -54,6 +57,12 @@
             <div>Просмотров: {views} </div>
         </div>
     </div>
+    <br>
+    [full-link]
+        <button type="button" class="btn btn-default">Полная новость</button>
+    [/full-link]
+
+    <br>
     <br>
     {*{short-story}*}
 </div>

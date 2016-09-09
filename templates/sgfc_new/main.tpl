@@ -39,7 +39,7 @@
 
 
 				[/page-count]
-				<div>----------------------</div>
+				{*<div>----------------------</div>*}
 				<div>
 					{custom template="shortstory" available="global" from="3" order="date" sort="desc" navigation="yes"}
 				</div>

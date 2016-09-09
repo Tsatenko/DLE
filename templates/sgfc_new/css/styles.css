@@ -57,6 +57,9 @@ h5, .h5 { font-size: 16px; }
 .block_new_post {
 	/*text-align: center;*/
 }
+.new_post_img img {
+	/*width: 50%;*/
+}
 .short-story {
 	width: 750px;
 	/*height: 250px;*/
@@ -66,15 +69,12 @@ h5, .h5 { font-size: 16px; }
 	margin-bottom: 10px;
 	text-align: center;
 }
-/*.short-story:nth-child(3n+4) {*/
-	/*margin-right: 0;*/
-	/*background: white;*/
-/*}*/
+
 .short-story_small {
 	float: left;
 	width: 240px;
-	height: 250px;
-	background: grey;
+	height: 300px;
+	background: darkgrey;
 	margin-right: 15px;
 	margin-top: 10px;
 	margin-bottom: 10px;

@@ -553,7 +553,7 @@ while ( $row = $db->get_row( $sql_result ) ) {
 
 	if ($config['allow_links'] AND function_exists('replace_links')) $row['short_story'] = replace_links ( $row['short_story'], $replace_links['news'] );
 
-	if (stripos ( $tpl->copy_template, "{image-" ) !== false) {
+	if (stripos ( $tpl->copy_template, "{image-" ) !== false || stripos ( $tpl->copy_template, "{imageLarge-" ) !== false ) {
 
 		$images = array();
 		preg_match_all('/(img|src)=("|\')[^"\'>]+/i', $row['short_story'], $media);
@@ -575,13 +575,21 @@ while ( $row = $db->get_row( $sql_result ) ) {
 				$tpl->copy_template = str_replace( '{image-'.$i_count.'}', $url, $tpl->copy_template );
 				$tpl->copy_template = str_replace( '[image-'.$i_count.']', "", $tpl->copy_template );
 				$tpl->copy_template = str_replace( '[/image-'.$i_count.']', "", $tpl->copy_template );
+				//Проверяем на нашем ли хостинге находится картинка
+				$checkMyServer = parse_url($url);
+				if(stripos($config['http_home_url'], $checkMyServer['host'] ) !== false && stripos($checkMyServer['path'],'/thumbs/') !== false){
+					$tpl->copy_template = str_replace( '{imagelarge-'.$i.'}', str_replace('thumbs/','',$url), $tpl->copy_template );
+				}else{$tpl->copy_template = str_replace( '{imagelarge-'.$i.'}',$url, $tpl->copy_template );}
+				$tpl->copy_template = str_replace( '[imagelarge-'.$i.']', "", $tpl->copy_template );
+				$tpl->copy_template = str_replace( '[/imagelarge-'.$i.']', "", $tpl->copy_template );
 			}
 
 		}
 
 		$tpl->copy_template = preg_replace( "#\[image-(.+?)\](.+?)\[/image-(.+?)\]#is", "", $tpl->copy_template );
 		$tpl->copy_template = preg_replace( "#\\{image-(.+?)\\}#i", "{THEME}/dleimages/no_image.jpg", $tpl->copy_template );
-
+		$tpl->copy_template = preg_replace( "#\[imagelarge-(.+?)\](.+?)\[/imagelarge-(.+?)\]#is", "", $tpl->copy_template );
+		$tpl->copy_template = preg_replace( "#\\{imagelarge-(.+?)\\}#i", "{THEME}/dleimages/no_image.jpg", $tpl->copy_template );
 	}
 
 	$tpl->set( '{short-story}', $row['short_story'] );
