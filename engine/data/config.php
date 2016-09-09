@@ -26,7 +26,7 @@ $config = array (
 
 'langs' => 'Russian',
 
-'skin' => 'Default',
+'skin' => 'sgfc_new',
 
 'allow_admin_wysiwyg' => '0',
 
@@ -106,7 +106,7 @@ $config = array (
 
 'short_rating' => '1',
 
-'rating_type' => '0',
+'rating_type' => '2',
 
 'allow_site_wysiwyg' => '0',
 

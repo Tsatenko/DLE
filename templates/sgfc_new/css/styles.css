@@ -59,7 +59,7 @@ h5, .h5 { font-size: 16px; }
 }
 .short-story {
 	width: 750px;
-	height: 250px;
+	/*height: 250px;*/
 	background: burlywood;
 	margin-right: 15px;
 	margin-top: 10px;
