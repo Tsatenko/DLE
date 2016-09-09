@@ -4,6 +4,12 @@
     <div class="row">
         <div class="col-lg-4">
             <div>Катнгория:{link-category}</div>
+            <div>Катнгория 222:{category}</div>
+            <a href="{category-url}">[xfvalue_aka_name]</a>
+            {*[xfgiven_aka_name] {category-url} [/xfgiven_aka_name]*}
+            <div>Студия:{category}</div>
+            <a href="{category-url}">STSTST</a>
+            <div>link-category:{link-category}</div>
         </div>
         <div class="col-lg-4">
             [complaint]

@@ -31,13 +31,28 @@
 				{AJAX}
 				{info}
 
-				[not-available=showfull]
+				{*[not-available=showfull]*}
+				{*[page-count=1]*}
+					{*<div align="center">*}
+						{*{custom template="custom" available="global" from="0" limit="3" order="date" sort="desc"}*}
+					{*</div>*}
+				{*[/page-count]*}
+				{*<div>----------------------</div>*}
+				{*<div>*}
+					{*{custom template="shortstory_gl" available="global" from="3" order="date" sort="desc" navigation="yes"}*}
+				{*</div>*}
+				{*[/not-available]*}
+
+				{*[available=showfull|cat]*}
+					{*{content}*}
+				{*[/available]*}
+				<br />
+
+				[not-available="showfull|cat|catalog"]
 				[page-count=1]
 				<div align="center">
 					{custom template="custom" available="global" from="0" limit="3" order="date" sort="desc"}
 				</div>
-
-
 				[/page-count]
 				{*<div>----------------------</div>*}
 				<div>
@@ -45,10 +60,9 @@
 				</div>
 				[/not-available]
 
-				[available=showfull]
-				{content}
+				[available="showfull|cat|global"]
+					{content}
 				[/available]
-				<br />
 
 				{*[not-page-count=1]{content}[/not-page-count]*}
 
