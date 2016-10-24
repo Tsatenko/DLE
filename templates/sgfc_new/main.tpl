@@ -17,11 +17,75 @@
 
 	<link href="{THEME}/css/engine.css" type="text/css" rel="stylesheet">
 	<link href="{THEME}/css/styles.css" type="text/css" rel="stylesheet">
+
+	<link rel="stylesheet" href="{THEME}/fonts/fontawesome/css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
 <div id="wrapper">
 	<div id="header">HEADER</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				left
+			</div>
+			<div class="col-lg-6">
+				center
+			</div>
+			<div class="col-lg-3 color_colum">
+				<div class="block">
+					<div class="bl_header">
+						<h4>Title <span>Block</span></h4>
+					</div>
+					<div class="bl_content_category">
+						<ul>
+							<a href="#" title="Sample text"><li><i class="fa fa-chevron-right"></i>
+									111
+								</li></a>
+							<a href="#" title="Sample text"><li><i class="fa fa-chevron-right"></i>
+									222
+								</li></a>
+							<a href="#" title="Sample text"><li><i class="fa fa-chevron-right"></i>
+									333
+								</li></a>
+						</ul>
+dsfasdf
+						{*<span class="fa-stack">*}
+							{*<i class="fa fa-circle-thin fa-stack-2x"></i>*}
+							{*<i class="fa fa-plus fa-stack-1x"></i>*}
+						{*</span>*}
+						{*fa-twitter on fa-square-o<br>*}
+					</div>
+					<div class="bl_foter">
+						<div>
+							footer
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="bl_header">
+						<h4>Title <span>Block</span></h4>
+					</div>
+					<div class="bl_content">
+						dsfasdf
+						{*<span class="fa-stack">*}
+						{*<i class="fa fa-circle-thin fa-stack-2x"></i>*}
+						{*<i class="fa fa-plus fa-stack-1x"></i>*}
+						{*</span>*}
+						{*fa-twitter on fa-square-o<br>*}
+					</div>
+					<div class="bl_foter">
+						<div>
+							footer
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
 	<div id="content" class="container">
 		<div  class="row">
 			<div class="col-lg-2 col-left">
@@ -48,7 +112,7 @@
 				{*[/available]*}
 				<br />
 
-				[not-available="showfull|cat|catalog"]
+				[not-available=showfull]
 				[page-count=1]
 				<div align="center">
 					{custom template="custom" available="global" from="0" limit="3" order="date" sort="desc"}
@@ -60,7 +124,7 @@
 				</div>
 				[/not-available]
 
-				[available="showfull|cat|global"]
+				[available=showfull|global|cat]
 					{content}
 				[/available]
 
