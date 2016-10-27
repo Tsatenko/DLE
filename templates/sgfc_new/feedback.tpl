@@ -1,79 +1,45 @@
-<h2 class="heading">Обратная связь</h2>
-<div class="brdform">
-	<div class="baseform">
-		<table class="tableform">
-		[not-logged]
-			<tr>
-				<td class="label">
-					Ваше имя:<span class="impot">*</span>
-				</td>
-				<td><input type="text" maxlength="35" name="name" class="f_input" /></td>
-			</tr>
-			<tr>
-				<td class="label">
-					Ваш E-Mail:<span class="impot">*</span>
-				</td>
-				<td><input type="text" maxlength="35" name="email" class="f_input" /></td>
-			</tr>
-		[/not-logged]
-			<tr>
-				<td class="label">
-					Кому:<span class="impot">*</span>
-				</td>
-				<td>{recipient}</td>
-			</tr>
-			<tr>
-				<td class="label">
-					Тема:<span class="impot">*</span>
-				</td>
-				<td><input type="text" maxlength="45" name="subject" class="f_input" /></td>
-			</tr>
-			<tr>
-				<td class="label" valign="top">
-					Сообщение:
-				</td>
-				<td><textarea name="message" style="width: 380px; height: 160px" class="f_textarea" /></textarea></td>
-			</tr>
-			[sec_code]<tr>
-				<td class="label">
-					Введите код:<span class="impot">*</span>
-				</td>
-				<td>
-					<div>{code}</div>
-					<div><input type="text" maxlength="45" name="sec_code" style="width:115px" class="f_input" /></div>
-				</td>
-			</tr>[/sec_code]
+<article class="box story">
+	{include file="modules/contacts.tpl"}
+	{include file="modules/map.tpl"}
+	<div class="box_in">
+		<h4 class="title h1">Обратная связь</h4>
+		<div class="addform">
+			<ul class="ui-form">
+			[not-logged]
+			<li class="form-group combo">
+				<div class="combo_field"><input placeholder="Ваше имя" type="text" maxlength="35" name="name" id="name" class="wide" required></div>
+				<div class="combo_field"><input placeholder="Ваш E-mail" type="email" maxlength="35" name="email" id="email" class="wide" required></div>
+			</li>
+			[/not-logged]
+				<li class="form-group">
+					<input placeholder="Тема сообщения" type="text" maxlength="45" name="subject" id="subject" class="wide" required>
+				</li>
+				<li class="form-group">
+					<label>Получатель</label>
+					{recipient}
+				</li>
+				<li class="form-group">
+					<textarea placeholder="Сообщение" name="message" id="message" rows="8" class="wide" required></textarea>
+				</li>
 			[recaptcha]
-			<tr>
-				<td class="label">
-					Введите два слова, показанных на изображении: <span class="impot">*</span>
-				</td>
-				<td>
-					<div>{recaptcha}</div>
-				</td>
-			</tr>
+				<li class="form-group">{recaptcha}</li>
 			[/recaptcha]
 			[question]
-			<tr>
-				<td class="label">
-					Вопрос:
-				</td>
-				<td>
-					<div>{question}</div>
-				</td>
-			</tr>
-			<tr>
-				<td class="label">
-					Ответ:<span class="impot">*</span>
-				</td>
-				<td>
-					<div><input type="text" name="question_answer" id="question_answer" class="f_input" /></div>
-				</td>
-			</tr>
+				<li class="form-group">
+					<label for="question_answer">Вопрос: {question}</label>
+					<input placeholder="Ответ" type="text" name="question_answer" id="question_answer" class="wide" required>
+				</li>
 			[/question]
-		</table>
-		<div class="fieldsubmit">
-			<button name="send_btn" class="fbutton" type="submit"><span>Отправить</span></button>
+			</ul>
+			<div class="form_submit">
+				[sec_code]
+					<div class="c-captcha">
+						{code}
+						<input placeholder="Повторите код" title="Введите код указанный на картинке" type="text" name="sec_code" id="sec_code" required>
+					</div>
+				[/sec_code]
+				<button class="btn btn-big" type="submit" name="send_btn"><b>Отправить сообщение</b></button>
+			</div>
 		</div>
 	</div>
-</div>
+</article>

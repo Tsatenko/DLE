@@ -1,123 +1,92 @@
-<link rel="stylesheet" type="text/css" href="engine/skins/chosen/chosen.css"/>
-<script type="text/javascript" src="engine/skins/chosen/chosen.js"></script>
-<script type="text/javascript">
-$(function(){
-	$('#category').chosen({allow_single_deselect:true, no_results_text: 'Ничего не найдено'});
-});
-</script>
-<h2 class="heading">Добавить новость</h2>
-<div class="brdform">
-	<div class="baseform">	
-		<table class="tableform">
-			<tr>
-				<td class="label">
-					Заголовок:<span class="impot">*</span>
-				</td>
-				<td><input type="text" name="title" value="{title}" maxlength="150" class="f_input" /></td>
-			</tr>
-		[urltag]
-			<tr>
-				<td class="label">URL статьи:</td>
-				<td><input type="text" name="alt_name" value="{alt-name}" maxlength="150" class="f_input" /></td>
-			</tr>
-		[/urltag]
-			<tr>
-				<td class="label">
-					Категория:<span class="impot">*</span>
-				</td>
-				<td>{category}</td>
-			</tr>
-			<td class="label">&nbsp;</td>
-			<td><a href="#" onclick="$('.addvote').toggle();return false;">Добавить опрос</a></td>
-		</tr>
-		<tr  class="addvote" style="display:none;" >
-			<td class="label">Заголовок опроса:</td>
-			<td><input type="text" name="vote_title" value="{votetitle}" maxlength="150" class="f_input" /></td>
-		</tr>
-		<tr  class="addvote" style="display:none;" >
-			<td class="label">Вопрос:</td>
-			<td><input type="text" name="frage" value="{frage}" maxlength="150" class="f_input" /></td>
-		</tr>
-		<tr  class="addvote" style="display:none;" >
-			<td class="label">Варианты ответов:<br /><br />Каждая новая строка является новым вариантом ответа</td>
-			<td><textarea name="vote_body" rows="10" class="f_textarea" >{votebody}</textarea><br /><input type="checkbox" name="allow_m_vote" value="1" {allowmvote}> Разрешить выбор нескольких вариантов</td>
-		</tr>
-		<tr>
-			<tr>
-				<td colspan="2">
-					<b>Вводная часть: <span class="impot">*</span></b> (Обязательно)
+<article class="box story">
+	<div class="box_in">
+		<h4 class="title h1">Добавить новость</h4>
+		<div class="addform">
+			<ul class="ui-form">
+				<li class="form-group">
+					<label for="title" class="imp">Заголовок</label>
+					<input type="text" name="title" id="title" value="{title}" class="wide" required>
+				</li>
+				[urltag]
+				<li class="form-group">
+					<label for="alt_name" class="imp">URL новости</label>
+					<input type="text" name="alt_name" id="alt_name" value="{alt-name}" class="wide">
+				</li>
+				[/urltag]
+				<li class="form-group">
+					<label for="category" class="imp">Категория</label>
+					{category}
+				</li>
+				<li class="form-group">
+					<label><a href="#" onclick="$('.addvote').toggle();return false;"><span class="plus_icon circle"><span>+</span></span> Добавить Опрос</a></label>
+				</li>
+				<li class="form-group addvote" style="display:none;">
+					<label for="vote_title" >Заголовок опроса</label>
+					<input type="text" name="vote_title" value="{votetitle}" class="wide" />
+				</li>
+				<li class="form-group addvote" style="display:none;">
+					<label for="frage" >Вопрос</label>
+					<input type="text" name="frage" value="{frage}" class="wide" />
+				</li>
+				<li class="form-group addvote" style="display:none;">
+					<label for="vote_body" >Список ответов</label>
+					<textarea name="vote_body" rows="5" class="wide" placeholder="Каждая новая строка является новым вариантом ответа">{votebody}</textarea><br /><input type="checkbox" name="allow_m_vote" value="1" {allowmvote}> Разрешить выбор нескольких вариантов
+				</li>
+				<li class="form-group">
+					<label for="short_story" class="imp">Краткое описание</label>
 					[not-wysywyg]
 					<div class="bb-editor">
 						{bbcode}
-						<textarea name="short_story" id="short_story" onfocus="setFieldName(this.name)" rows="15" class="f_textarea" >{short-story}</textarea>
+						<textarea name="short_story" id="short_story" onfocus="setFieldName(this.name)" rows="5" class="wide" required>{short-story}</textarea>
 					</div>
 					[/not-wysywyg]
 					{shortarea}
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2">
-					<b>Подробная часть:</b> (Необязательно)
+				</li>
+				<li class="form-group">
+					<label for="full_story">Полное описание</label>
 					[not-wysywyg]
 					<div class="bb-editor">
 						{bbcode}
-						<textarea name="full_story" id="full_story" onfocus="setFieldName(this.name)" rows="20" class="f_textarea" >{full-story}</textarea>
+						<textarea name="full_story" id="full_story" onfocus="setFieldName(this.name)" rows="12" class="wide" >{full-story}</textarea>
 					</div>
 					[/not-wysywyg]
 					{fullarea}
-				</td>
-			</tr>
-			<tr>
-				<td class="label">Ключевые слова для облака тегов:</td>
-				<td><input type="text" name="tags" id="tags" value="{tags}" maxlength="150"  class="f_input" autocomplete="off" /></td>
-			</tr>
-			{xfields}
-		[question]
-		<tr>
-			<td class="label">
-				Вопрос:
-			</td>
-			<td>
-				<div>{question}</div>
-			</td>
-		</tr>
-		<tr>
-			<td class="label">
-				Ответ:<span class="impot">*</span>
-			</td>
-			<td>
-				<div><input type="text" name="question_answer" class="f_input" /></div>
-			</td>
-		</tr>
-		[/question]
-			[sec_code]
-			<tr>
-				<td class="label">
-					Введите код<br />с картинки:<span class="impot">*</span>
-				</td>
-				<td>
-					<div>{sec_code}</div>
-					<div><input type="text" name="sec_code" id="sec_code" style="width:115px" class="f_input" /></div>
-				</td>
-			</tr>
-			[/sec_code]
+				</li>
+				<li class="form-group">
+					<label for="alt_name">Ключевые слова</label>
+					<input placeholder="Вводите через запятую" type="text" name="tags" id="tags" value="{tags}" maxlength="150" autocomplete="off" class="wide">
+				</li>
+				<li class="form-group">
+					<table style="width:100%">
+						{xfields}
+					</table>
+				</li>
+			[group=1,2]
+				<li class="form-group">
+					<div class="admin_checkboxs">{admintag}</div>
+				</li>
+			[/group]
 			[recaptcha]
-			<tr>
-				<td class="label">
-					Введите два слова, показанных на изображении:<span class="impot">*</span>
-				</td>
-				<td>
-					<div>{recaptcha}</div>
-				</td>
-			</tr>
+				<li class="form-group">{recaptcha}</li>
 			[/recaptcha]
-			<tr>
-				<td colspan="2">{admintag}</td>
-			</tr>
-		</table>
-		<div class="fieldsubmit">
-			<button name="add" class="fbutton" type="submit"><span>Отправить</span></button>
-			<button name="nview" onclick="preview()" class="fbutton" type="submit"><span>Просмотр</span></button>
+			[question]
+				<li class="form-group">
+					<label for="question_answer">{question}</label>
+					<input placeholder="Введите ответ" type="text" name="question_answer" id="question_answer" class="wide" required>
+				</li>
+			[/question]
+			</ul>
+			<p style="margin: 20px 0 0 0;" class="grey"><span style="color: #e85319">*</span> — поля отмеченные звездочкой обязательны для заполнения.</p>
+			<div class="form_submit">
+				[sec_code]
+					<div class="c-captcha">
+						{sec_code}
+						<input placeholder="Повторите код" title="Введите код указанный на картинке" type="text" name="sec_code" id="sec_code" required>
+					</div>
+				[/sec_code]
+				<button class="btn btn-big" type="submit" name="add"><b>Отправить</b></button>
+				<button class="btn-border btn-big" onclick="preview()" type="submit" name="nview"><b>Предпросмотр</b></button>
+			</div>
 		</div>
 	</div>
-</div>
+</article>

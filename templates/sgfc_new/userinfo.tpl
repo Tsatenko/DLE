@@ -1,114 +1,120 @@
-<h2 class="heading">Пользователь: {usertitle}</h2>
-<div class="basecont">
-	<div class="userinfo">
-		<div class="lcol">
-			<div class="avatar"><img src="{foto}" alt=""/><div class="rateui">{rate}</div></div>
-			<ul class="reset">
-				<li class="clr">{email}</li>
-				[not-group=5]<li>{pm}</li>[/not-group]
-			</ul>
+<article class="box story">
+	<div class="box_in dark_top userinfo_top">
+		<ul class="title user_tab h1">
+			<li class="active"><a href="#user1" data-toggle="tab">[group=5]Пользователь [/group]{usertitle}</a></li>
+			[not-logged]<li><a href="#user2" data-toggle="tab">Редактировать</a></li>[/not-logged]
+			[not-group=5]<li>{pm}</li>[/not-group]
+		</ul>
+		<div class="avatar">
+			<a href="#"><span class="cover" style="background-image: url({foto});">{usertitle}</span></a>
 		</div>
-		<div class="rcol">
-			<ul>
-				<li><span class="grey">Полное имя:</span> <b>{fullname}</b></li>
-				<li><span class="grey">Группа:</span> {status} [time_limit]&nbsp;В группе до: {time_limit}[/time_limit]</li>
-				<li><span class="grey">ICQ:</span> <b>{icq}</b></li>
-			</ul>
-			<ul class="ussep">
-				<li><span class="grey">Количество публикаций:</span> <b>{news-num}</b> [{news}][rss]<img src="{THEME}/images/rss.png" alt="rss" style="vertical-align: middle; margin-left: 5px;" />[/rss]</li>
-				<li><span class="grey">Количество комментариев:</span> <b>{comm-num}</b> [{comments}]</li>
-				<li><span class="grey">Дата регистрации:</span> <b>{registration}</b></li>
-				<li><span class="grey">Последнее посещение:</span> <b>{lastdate}</b></li>
-<li><span class="grey">Статус:</span> [online]<img src="{THEME}/images/online.png" style="vertical-align: middle;" title="Пользователь Онлайн" alt="Пользователь Онлайн" />[/online][offline]<img src="{THEME}/images/offline.png" style="vertical-align: middle;" title="Пользователь offline" alt="Пользователь offline" />[/offline]</li>
-			</ul>
-			<ul class="ussep">
-				<li><span class="grey">Место жительства:</span> {land}</li>
-				<li><span class="grey">Немного о себе:</span> {info}</li>
-			</ul>
-			<span class="small">[not-logged] [ {edituser} ] [/not-logged]</span>
-		</div>
-		<div class="clr"></div>
 	</div>
-</div>
-<br />
-[not-logged]
-<div id="options" style="display:none;">
-	<br /><br />
-	<h2 class="heading">Редактирование профиля</h2>
-	<div class="brdform">
-		<div class="baseform">
-			<table class="tableform">
-				<tr>
-					<td class="label">Ваше Имя:</td>
-					<td><input type="text" name="fullname" value="{fullname}" class="f_input" /></td>
-				</tr>
-				<tr>
-					<td class="label">Ваш E-Mail:</td>
-					<td><input type="text" name="email" value="{editmail}" class="f_input" /><br />
-					<div class="checkbox">{hidemail}</div>
-					<div class="checkbox"><input type="checkbox" id="subscribe" name="subscribe" value="1" /> <label for="subscribe">Отписаться от подписанных новостей</label></div></td>
-				</tr>
-				<tr>
-					<td class="label">Место жительства:</td>
-					<td><input type="text" name="land" value="{land}" class="f_input" /></td>
-				</tr>
-				<tr>
-					<td class="label">Список игнорируемых пользователей:</td>
-					<td>{ignore-list}</td>
-				</tr>
-				<tr>
-					<td class="label">Номер ICQ:</td>
-					<td><input type="text" name="icq" value="{icq}" class="f_input" /></td>
-				</tr>
-				<tr>
-					<td class="label">Старый пароль:</td>
-					<td><input type="password" name="altpass" class="f_input" /></td>
-				</tr>
-				<tr>
-					<td class="label">Новый пароль:</td>
-					<td><input type="password" name="password1" class="f_input" /></td>
-				</tr>
-				<tr>
-					<td class="label">Повторите:</td>
-					<td><input type="password" name="password2" class="f_input" /></td>
-				</tr>
-				<tr>
-					<td class="label" valign="top">Блокировка по IP:<br />Ваш IP: {ip}</td>
-					<td>
-					<div><textarea name="allowed_ip" style="width:98%;" rows="5" class="f_textarea">{allowed-ip}</textarea></div>
-					<div>
-						<span class="small pink">
-						* Внимание! Будьте бдительны при изменении данной настройки.
-						Доступ к Вашему аккаунту будет доступен только с того IP-адреса или подсети, который Вы укажете.
-						Вы можете указать несколько IP адресов, по одному адресу на каждую строчку.
-						<br />
-						Пример: 192.48.25.71 или 129.42.*.*</span>
-					</div>
-					</td>
-				</tr>
-				<tr>
-					<td class="label">Аватар:</td>
-					<td>Загрузить с комьютера: <input type="file" name="image" class="f_input" /><br /><br />
-					Сервис <a href="http://www.gravatar.com/" target="_blank">Gravatar</a>: <input type="text" name="gravatar" value="{gravatar}" class="f_input" /> (Укажите E-mail на данном сервисе)
-					<br /><br /><div class="checkbox"><input type="checkbox" name="del_foto" id="del_foto" value="yes" /> <label for="del_foto">Удалить аватар</label></div>
-					</td>
-				</tr>
-				<tr>
-					<td class="label">О себе:</td>
-					<td><textarea name="info" style="width:98%;" rows="5" class="f_textarea">{editinfo}</textarea></td>
-				</tr>
-				<tr>
-					<td class="label">Подпись:</td>
-					<td><textarea name="signature" style="width:98%;" rows="5" class="f_textarea">{editsignature}</textarea></td>
-				</tr>
-				{xfields}
-			</table>
-			<div class="fieldsubmit">
-				<input class="fbutton" type="submit" name="submit" value="Отправить" />
-				<input name="submit" type="hidden" id="submit" value="submit" />
+	<div class="box_in">
+		<div class="tab-content">
+			<div class="tab-pane active" id="user1">
+				<ul class="usinf">
+					<li><div class="ui-c1 grey">Имя</div> <div class="ui-c2">{fullname}[not-fullname]Неизвестно[/not-fullname]</div></li>
+					<li><div class="ui-c1 grey">Место жительства</div> <div class="ui-c2">{land}[not-land]Неизвестно[/not-land]</div></li>
+					<li><div class="ui-c1 grey">Зарегистрирован</div> <div class="ui-c2">{registration}</div></li>
+					<li><div class="ui-c1 grey">Последняя активность</div> <div class="ui-c2">{lastdate}</div></li>
+					<li><div class="ui-c1 grey">Группа</div> <div class="ui-c2">{status}</div></li>
+					<li><div class="ui-c1 grey">Статус</div> <div class="ui-c2">[online]<span style="color: #70bb39;">Онлайн</span>[/online][offline]Офлайн[/offline]</div></li>
+				</ul>
+				<ul class="usinf">
+					<li><div class="ui-c1 grey">Кол-во публикаций</div> <div class="ui-c2">{news-num}&nbsp;&nbsp; [ {news} ]</div></li>
+					<li><div class="ui-c1 grey">Кол-во комментариев</div> <div class="ui-c2">{comm-num}&nbsp;&nbsp; [ {comments} ]</div></li>
+					<li><div class="ui-c1 grey">Рейтинг на сайте</div> <div class="ui-c2">{rate}</div></li>
+				</ul>
+				<h4 class="heading">О себе</h4>
+				<p>{info}</p>
+				[signature]
+					<h4 class="heading">Подпись</h4>
+					{signature}
+				[/signature]
 			</div>
+			[not-logged]
+			<div class="tab-pane" id="user2">
+				<!-- Настройки пользователя -->
+				<div id="options">
+					<div class="addform">
+						<ul class="ui-form">
+							<li class="form-group">
+								<label for="fullname">Ваше имя</label>
+								<input type="text" name="fullname" id="fullname" value="{fullname}" class="wide">
+							</li>
+							<li class="form-group">
+								<label for="email">Ваш e-mail</label>
+								<input type="email" name="email" id="email" value="{editmail}" class="wide" required>
+								<div class="checkbox">{hidemail}</div>
+							</li>
+							<li class="form-group">
+								<label for="land">Место проживания</label>
+								<input type="text" name="land" id="land" value="{land}" class="wide">
+							</li>
+							<li class="form-group">
+								<label>Часовой пояс</label>
+								{timezones}
+							</li>
+							<li class="form-group form-sep"></li>
+							<li class="form-group">
+								<label for="altpass">Старый пароль</label>
+								<input type="password" name="altpass" id="altpass" class="wide">
+							</li>
+							<li class="form-group">
+								<label for="password1">Новый пароль</label>
+								<input type="password" name="password1" id="password1" class="wide">
+							</li>
+							<li class="form-group">
+								<label for="password2">Повторите новый пароль</label>
+								<input type="password" name="password2" id="password2" class="wide">
+							</li>
+							<li class="form-group form-sep"></li>
+							<li class="form-group">
+								<label for="image">Загрузите аватар</label>
+								<input type="file" name="image" id="image" class="wide">
+							</li>
+							<li class="form-group">
+								<input placeholder="Использовать Gravatar" type="text" name="gravatar" id="gravatar" value="{gravatar}" class="wide">
+							</li>
+							<li class="form-group">
+								<div class="checkbox"><input type="checkbox" name="del_foto" id="del_foto" value="yes" /> <label for="del_foto">Удалить аватар</label></div>
+							</li>
+							<li class="form-group form-sep"></li>
+							<li class="form-group">
+								<label for="info">О себе</label>
+								<textarea name="info" id="info" rows="5" class="wide">{editinfo}</textarea>
+							</li>
+							<li class="form-group">
+								<label for="signature">Подпись</label>
+								<textarea name="signature" id="signature" rows="3" class="wide">{editsignature}</textarea>
+							</li>
+							<li class="form-group form-sep"></li>
+							<li class="form-group">
+								<label for="signature">Список игнорируемых пользователей:</label>
+								{ignore-list}
+							</li>
+							<li class="form-group form-sep"></li>
+							[group=1,2,3]
+							<li class="form-group">
+								<label for="allowed_ip">Блокировка по IP</label>
+								<textarea placeholder="Примеры: 192.48.25.71 or 129.42.*.*" name="allowed_ip" id="allowed_ip" rows="5" class="field wide">{allowed-ip}</textarea>
+							</li>
+							[/group]
+							<li class="form-group">
+								<table class="xfields">
+								{xfields}
+								</table>
+							</li>
+						</ul>
+						<div class="form_submit">
+							<button class="btn btn-big" name="submit" type="submit"><b>Сохранить</b></button>
+							<input name="submit" type="hidden" id="submit" value="submit">
+						</div>
+					</div>
+				</div>
+				<!-- / Настройки пользователя -->
+			</div>
+			[/not-logged]
 		</div>
 	</div>
-	<br />
-</div>
-[/not-logged]
+</article>

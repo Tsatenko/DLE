@@ -1,35 +1,25 @@
-<h2 class="heading">Восстановить пароль</h2>
-<div class="brdform">
-	<div class="baseform">
-		<table class="tableform">
-			<tr>
-				<td class="label">
-					Ваш логин или E-Mail на сайте:
-				</td>
-				<td><input class="f_input" type="text" name="lostname" /></td>
-			</tr>
-			[sec_code]<tr>
-				<td class="label">
-					Введите код<br />с картинки:<span class="impot">*</span>
-				</td>
-				<td>
-					<div>{code}</div>
-					<div><input class="f_input" style="width:115px" maxlength="45" name="sec_code" size="14" /></div>
-				</td>
-			</tr>[/sec_code]
-			[recaptcha]
-			<tr>
-				<td class="label">
-					Введите два слова, показанных на изображении: <span class="impot">*</span>
-				</td>
-				<td>
-					<div>{recaptcha}</div>
-				</td>
-			</tr>
-			[/recaptcha]
-		</table>
-		<div class="fieldsubmit">
-			<button name="submit" class="fbutton" type="submit"><span>Отправить</span></button>
+<div class="page_form__inner">
+	<h1 class="title h1">Восстановление пароля</h1>
+	<div class="page_form__form">
+		<ul class="ui-form">
+			<li class="form-group">
+				<label for="lostname">Логин или E-mail</label>
+				<input type="text" name="lostname" id="lostname" class="wide" required>
+			</li>
+		[sec_code]
+			<li class="form-group">
+				<div class="c-captcha">
+					{code}
+					<input placeholder="Повторите код" title="Введите код указанный на картинке" type="text" name="sec_code" id="sec_code" required>
+				</div>
+			</li>
+		[/sec_code]
+		[recaptcha]
+			<li>{recaptcha}</li>
+		[/recaptcha]
+		</ul>
+		<div class="form_submit">
+			<button class="btn" name="submit" type="submit">Восстановить</button>
 		</div>
 	</div>
 </div>

@@ -1,128 +1,160 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<!DOCTYPE html>
+<html[available=lostpassword|register] class="page_form_style"[/available]>
 <head>
-{headers}
-<link rel="shortcut icon" href="{THEME}/images/favicon.ico" />
-<link media="screen" href="{THEME}/style/styles.css" type="text/css" rel="stylesheet" />
-<link media="screen" href="{THEME}/style/engine.css" type="text/css" rel="stylesheet" />
-{*<script type="text/javascript" src="{THEME}/js/libs.js"></script>*}
+    {headers}
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <link rel="shortcut icon" href="{THEME}/images/favicon.ico">
+    <link rel="apple-touch-icon" href="{THEME}/images/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{THEME}/images/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{THEME}/images/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{THEME}/images/touch-icon-ipad-retina.png">
+    <meta property="og:image" content="{THEME}/images/logo.png">
+
+    <link href="{THEME}/css/engine.css" type="text/css" rel="stylesheet">
+    <link href="{THEME}/css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-{AJAX}
-<div class="font_test">Font test</div>
-{*<div class="wwide topline">&nbsp;</div>*}
-{*<div class="wrapper">*}
-	{*<div id="header" class="container">*}
-		{*<h1><a class="thide" href="/index.php" title="DataLife Engine - Softnews Media Group">DataLife Engine - Softnews Media Group</a></h1>*}
-		{*<div class="rcol">*}
-			{*<div class="loginbox">{login}</div>*}
-			{*<span class="headsoc">*}
-				{*<a class="twit thide" href="#">Мы в Twitter</a>*}
-				{*<a class="vkon thide" href="#">Мы в vKontakte</a>*}
-			{*</span>*}
-			{*<div class="headlinks">*}
-				{*<ul class="reset">*}
-					{*<li><a href="/index.php"><i>Главная</i></a></li>*}
-					{*<li><a href="/index.php?do=rules"><i>Правила</i></a></li>*}
-					{*<li><a href="/index.php?do=feedback"><i>Контакты</i></a></li>*}
-				{*</ul>*}
-			{*</div>*}
-		{*</div>*}
-	{*</div>*}
-	{*<div class="shadlr"><div class="shadlr">*}
-		{*<div class="container">*}
-			{*<div class="darkbg"><div id="menubar">*}
-				{*<div class="lcol">*}
-					{*<ul class="reset">*}
-						{*<li><a href="#">О сайте</a></li>*}
-						{*<li><a href="#">В мире</a></li>*}
-						{*<li><a href="#">Экономика</a></li>*}
-						{*<li><a href="#">Религия</a></li>*}
-						{*<li><a href="#">Криминал</a></li>*}
-						{*<li><a href="#">Спорт</a></li>*}
-						{*<li><a href="#">Культура</a></li>*}
-						{*<li><a href="#">Инопресса</a></li>*}
-					{*</ul>*}
-				{*</div>*}
-				{*<form method="post" action=''>*}
-					{*<input type="hidden" name="do" value="search" />*}
-                    {*<input type="hidden" name="subaction" value="search" />*}
-					{*<ul class="searchbar reset">*}
-						{*<li class="lfield"><input id="story" name="story" value="Поиск..." onblur="if(this.value=='') this.value='Поиск...';" onfocus="if(this.value=='Поиск...') this.value='';" type="text" /></li>*}
-						{*<li class="lbtn"><input title="Найти" alt="Найти" type="image" src="{THEME}/images/spacer.gif" /></li>*}
-					{*</ul>*}
-				{*</form>*}
-			{*</div></div>*}
-			{*<div class="body">*}
-				{*{include file="slider.tpl"}*}
-				{*<div class="vsep">*}
-					{*<div id="midside" class="lcol">*}
-						{*[aviable=showfull]{speedbar}[/aviable]*}
-						{*<div align="center" class="hbanner">*}
-							{*{banner_header}*}
-						{*</div>*}
-						{*[not-aviable=showfull][sort]<div class="sortn lines">{sort}</div>[/sort][/not-aviable]*}
-						{*{info}*}
-						{*{content}*}
-					{*</div>*}
-					{*<div id="sidebar" class="rcol">*}
-						{*{include file="sidebar.tpl"}*}
-					{*</div>*}
-					{*<div class="clr"></div>*}
-				{*</div>*}
-			{*</div>*}
-		{*</div>*}
-	{*</div></div>*}
+<div class="font_test_oswaldregular">Font test font_test_opsa</div>
+{*[not-available=lostpassword|register]*}
+{*<div class="page[available=showfull] showfull[/available]">*}
+    {*<div class="wrp">*}
+        {*<!-- Header -->*}
+        {*<header id="header">*}
+            {*<!-- Поиск -->*}
+            {*<form id="q_search" class="rightside" method="post">*}
+                {*<div class="q_search">*}
+                    {*<input id="story" name="story" placeholder="Поиск по сайту..." type="search">*}
+                    {*<button class="btn q_search_btn" type="submit" title="Найти"><svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg><span class="title_hide">Найти</span></button>*}
+                    {*<a class="q_search_adv" href="/index.php?do=search&amp;mode=advanced" title="Расширенный поиск"><svg class="icon icon-set"><use xlink:href="#icon-set"></use></svg><span class="title_hide">Расширенный поиск</span></a>*}
+                {*</div>*}
+                {*<input type="hidden" name="do" value="search">*}
+                {*<input type="hidden" name="subaction" value="search">*}
+            {*</form>*}
+            {*<!-- / Поиск -->*}
+            {*<div class="header">*}
+                {*<div class="wrp">*}
+                    {*<div class="midside">*}
+                        {*<div id="header_menu">*}
+                            {*<!-- Логотип -->*}
+                            {*<a class="logotype" href="/">*}
+                                {*<span class="logo_icon"><svg class="icon icon-logo"><use xlink:href="#icon-logo"></use></svg></span>*}
+                                {*<span class="logo_title">DataLife Engine</span>*}
+                            {*</a>*}
+                            {*<!-- / Логотип -->*}
+                            {*<!-- Основное Меню -->*}
+                            {*<nav id="top_menu">*}
+                                {*{include file="modules/topmenu.tpl"}*}
+                            {*</nav>*}
+                            {*<!-- / Основное Меню -->*}
+                            {*<!-- Кнопка вызова меню -->*}
+                            {*<button id="mobile_menu_btn">*}
+									{*<span class="menu_toggle">*}
+										{*<i class="mt_1"></i><i class="mt_2"></i><i class="mt_3"></i>*}
+									{*</span>*}
+									{*<span class="menu_toggle__title">*}
+										{*Меню*}
+									{*</span>*}
+                            {*</button>*}
+                            {*<!-- / Кнопка вызова меню -->*}
+                            {*{login}*}
+                            {*<!-- Кнопка вызова меню -->*}
+                            {*<button id="search_btn">*}
+									{*<span>*}
+										{*<svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>*}
+										{*<svg class="icon icon-cross"><use xlink:href="#icon-cross"></use></svg>*}
+									{*</span>*}
+                            {*</button>*}
+                            {*<!-- / Кнопка вызова меню -->*}
+                        {*</div>*}
+                    {*</div>*}
+                    {*<div id="cat_menu">*}
+                        {*<nav class="cat_menu">*}
+                            {*<div class="cat_menu__tm">{include file="modules/topmenu.tpl"}</div>*}
+                            {*{include file="modules/catmenu.tpl"}*}
+                        {*</nav>*}
+                        {*<div class="soc_links">*}
+                            {*<a class="soc_vk" href="#" title="Мы вКонтакте">*}
+                                {*<svg class="icon icon-vk"><use xlink:href="#icon-vk"></use></svg>*}
+                            {*</a>*}
+                            {*<a class="soc_tw" href="#" title="Мы в Twitter">*}
+                                {*<svg class="icon icon-tw"><use xlink:href="#icon-tw"></use></svg>*}
+                            {*</a>*}
+                            {*<a class="soc_fb" href="#" title="Мы в Facebook">*}
+                                {*<svg class="icon icon-fb"><use xlink:href="#icon-fb"></use></svg>*}
+                            {*</a>*}
+                            {*<a class="soc_gp" href="#" title="Мы в Google">*}
+                                {*<svg class="icon icon-gp"><use xlink:href="#icon-gp"></use></svg>*}
+                            {*</a>*}
+                        {*</div>*}
+                    {*</div>*}
+                {*</div>*}
+            {*</div>*}
+        {*</header>*}
+        {*<!-- / Header -->*}
+        {*<div class="conteiner">*}
+            {*<div class="midside">*}
+                {*<div class="content_top">*}
+                    {*{include file="modules/carousel.tpl"}*}
+                    {*{include file="modules/pagetools.tpl"}*}
+                {*</div>*}
+                {*<section id="content">*}
+                    {*{info}*}
+                    {*[available=lastcomments]*}
+                    {*<div class="box">*}
+                        {*<h1 class="heading h4">Последние комментарии</h1>*}
+                        {*<div class="com_list">*}
+                            {*{content}*}
+                        {*</div>*}
+                    {*</div>*}
+                    {*[/available]*}
+                    {*[not-available=lastcomments]*}
+                    {*{content}*}
+                    {*[/not-available]*}
+                {*</section>*}
+                {*{include file="modules/footside.tpl"}*}
+            {*</div>*}
+            {*{include file="modules/rightside.tpl"}*}
+        {*</div>*}
+        {*{include file="modules/footmenu.tpl"}*}
+    {*</div>*}
+    {*{include file="modules/footer.tpl"}*}
 {*</div>*}
-{*<div class="wwide footbg">*}
-	{*<div class="wrapper">*}
-		{*<div class="container">*}
-			{*<div class="darkbg"><div id="footbox">*}
-				{*<div class="fbox">*}
-					{*<div class="dcont">*}
-						{*<h4 class="btl"><span>Навигация</span></h4>*}
-						{*<ul class="fmenu reset">*}
-							{*<li><a href="/index.php">Главная страница</a></li>*}
-							{*[group=5]<li><a href="/index.php?do=register">Регистрация</a></li>[/group]*}
-							{*[not-group=5]<li><a href="/addnews.html">Добавить новость</a></li>[/not-group]*}
-							{*<li><a href="/newposts/">Новое на сайте</a></li>*}
-							{*<li><a href="/statistics.html">Статистика</a></li>*}
-							{*<li><a href="http://dle-news.ru">Поддержка скрипта</a></li>*}
-						{*</ul>*}
-					{*</div>*}
-				{*</div>*}
-				{*<div class="fbox">*}
-					{*<div class="dcont">*}
-						{*<h4 class="btl"><span>Облако тегов</span></h4>*}
-						{*{tags}*}
-					{*</div>*}
-				{*</div>*}
-				{*<div class="fbox">*}
-					{*<div class="dcont">*}
-						{*<h4 class="btl"><span>Архив новостей</span></h4>*}
-						{*{archives}*}
-					{*</div>*}
-				{*</div>*}
-				{*<div class="clr"></div>*}
-				{*<span class="thide ribbon">^</span>*}
-			{*</div></div>*}
-			{*<div id="footer">*}
-				{*<h2><a class="thide" href="/index.php" title="DataLife Engine - Softnews Media Group">DataLife Engine - Softnews Media Group</a></h2>*}
-				{*<span class="copyright">*}
-					{*Copyright &copy; 2004-2013 <a href="http://dle-news.ru">SoftNews Media Group</a> All Rights Reserved.<br />*}
-					{*Powered by DataLife Engine &copy; 2013*}
-				{*</span>*}
-				{*<div class="counts">*}
-					{*<ul class="reset">*}
-						{*<li><a href="http://www.mid-team.ws/" title="M.I.D Team" target="_blank"><img src="/uploads/button.gif" style="border: none;" /></a></li>*}
-						{*<li><a href="http://www.mid-team.ws/" title="M.I.D Team" target="_blank"><img src="/uploads/button.gif" style="border: none;" /></a></li>*}
-						{*<li><a href="http://www.mid-team.ws/" title="M.I.D Team" target="_blank"><img src="/uploads/button.gif" style="border: none;" /></a></li>*}
-					{*</ul>*}
-				{*</div>*}
-			{*</div>*}
-			{*<div class="shadow">&nbsp;</div>*}
-		{*</div>*}
-	{*</div>*}
+{*[/not-available]*}
+{*[available=lostpassword|register]*}
+{*<div class="page_form">*}
+    {*<a class="page_form__back" href="/" title="Вернуться на главную"><svg class="icon icon-left"><use xlink:href="#icon-left"></use></svg></a>*}
+    {*<div class="page_form__body">*}
+        {*<div class="page_form__logo">*}
+            {*<!-- Логотип -->*}
+            {*<a href="/">*}
+                {*<svg class="icon icon-logo"><use xlink:href="#icon-logo"></use></svg>*}
+                {*<span class="title_hide">DataLife Engine</span>*}
+            {*</a>*}
+            {*<!-- / Логотип -->*}
+        {*</div>*}
+        {*{info}*}
+        {*{content}*}
+        {*<div class="page_form__foot grey">*}
+            {*{include file="modules/copyright.tpl"}*}
+        {*</div>*}
+    {*</div>*}
 {*</div>*}
+{*[/available]*}
+{*{AJAX}*}
+{*<script type="text/javascript" src="{THEME}/js/lib.js"></script>*}
+{*<script type="text/javascript">*}
+    {*jQuery(function($){*}
+        {*$.get("{THEME}/images/sprite.svg", function(data) {*}
+            {*var div = document.createElement("div");*}
+            {*div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);*}
+            {*document.body.insertBefore(div, document.body.childNodes[0]);*}
+        {*});*}
+    {*});*}
+{*</script>*}
 </body>
 </html>

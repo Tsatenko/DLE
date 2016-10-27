@@ -1,17 +1,12 @@
-<div class="userinfo">
-		<div class="lcol">
-			<div class="avatar" style="margin: 0;"><img src="{foto}" alt=""/></div>
-		</div>
-		<div class="rcol">
-			<ul class="reset">
-				<li>Полное имя: <b>{fullname}</b></li>
-				<li>Группа: {status}</li>
-				<li>Дата посещения: <b>{lastdate}</b></li>
-				<li>Cтатус: [online]<img src="{THEME}/images/online.png" style="vertical-align: middle;" title="Пользователь Онлайн" alt="Пользователь Онлайн" />[/online][offline]<img src="{THEME}/images/offline.png" style="vertical-align: middle;" title="Пользователь offline" alt="Пользователь offline" />[/offline]</li>
-				<li>Дата регистрации: <b>{registration}</b></li>
-				<li>Публикаций: <b>{news-num}</b> [ {news} ]</li>
-				<li>Комментариев: <b>{comm-num}</b> [ {comments} ]</li>
-			</ul>
-		</div>
-		<div class="clr"></div>
+<div class="userinfo clrfix">
+	<div class="avatar"><b class="cover" style="background-image: url({foto});"></b></div>
+	<ul>
+		<li>Имя: <b>{fullname}</b></li>
+		<li>Статус: [online]<b style="color: #70bb39;">Онлайн</b>[/online][offline]<b>Офлайн</b>[/offline]</li>
+		<li>Группа: {status}</li>
+		<li>Был на сайте: <b>{lastdate}</b></li>
+		<li>Зарегистрирован: <b>{registration}</b></li>
+		<li>Новостей: <b>{news-num}</b> [ {news} ] [ [rss]RSS[/rss] ]</li>
+		<li>Комментариев: <b>{comm-num}</b> [ {comments} ]</li>
+	</ul>
 </div>

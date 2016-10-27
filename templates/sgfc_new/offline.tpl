@@ -1,25 +1,31 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<!DOCTYPE html>
+<html>
 <head>
-<meta content="text/html; charset={charset}" http-equiv="Content-Type" />
-<style type="text/css">
-body{ 
-	font: 13px/17px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	margin: 0; padding: 0;
-	color: #1b1f21; word-wrap: break-word;
-}
-a { color: #fff; text-decoration: underline; }
-a:hover { text-decoration: none; }
-.errorwrap { margin: 0 auto; width: 600px; margin-top: 26%; text-align: center; }
-.errorwrap p { margin: 0 0 15px 0; }
+	<meta charset="{charset}">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
 
-</style>
-<title>Сайт временно отключен</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/touch-icon-ipad-retina.png">
+	<meta property="og:image" content="{THEME}/images/logo.png">
+	
+	<link href="{THEME}/css/offline.css" type="text/css" rel="stylesheet">
+	<title>Сайт временно отключен</title>
 </head>
 <body>
-<div align="center" class="errorwrap">
-	<p><img src="{THEME}/images/offlinelogo.png" alt="DataLife Engine - Softnews media group" /></p>
-	<p>{reason}</p>
-</div>
+	<div class="offpage">
+		<div class="wrap">
+			<div class="logo"><img src="{THEME}/images/offline.png" alt=""></div>
+			<div class="title">Сайт временно отключен</div>
+			<div class="reason">{reason}</div>
+			<p class="copyright">Copyright © 2004&ndash;2016 <a href="http://dle-news.ru/" target="_blank" rel="nofollow">SoftNews Media Group</a> All Rights Reserved. Powered by DataLife Engine © 2016</p>
+		</div>
+	</div>
 </body>
 </html>

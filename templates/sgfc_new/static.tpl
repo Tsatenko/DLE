@@ -1,6 +1,7 @@
-<h2 class="heading"><span id="news-title">{description}</span></h2>
-<div class="basecont">
-	{static}
-	<br clear="all" />
-	<div class="storenumber">{pages}</div>
-</div>
+<article class="box story">
+	<div class="box_in">
+		<h1 class="title">{description}</h1>
+		<div class="text">{static}</div>
+		{pages}
+	</div>
+</article>

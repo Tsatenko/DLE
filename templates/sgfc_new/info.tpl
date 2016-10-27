@@ -1,4 +1,4 @@
-<div class="berrors"><div class="berrors">
-	<b>{title}</b><br />
+<div class="berrors fix_grid">
+	<b>{title}</b><br>
 	{error}
-</div></div>
+</div>

@@ -1,69 +1,33 @@
-<div class="brdform">
-	<div class="baseform">
-		<div class="dcont"><h2 class="heading">{title}</h2></div>
-		<table class="tableform">
-			[not-logged]
-			<tr>
-				<td class="label">
-					Имя:<span class="impot">*</span>
-				</td>
-				<td><input type="text" name="name" id="name" class="f_input" /></td>
-			</tr>
-			<tr>
-				<td class="label">
-					E-Mail:
-				</td>
-				<td><input type="text" name="mail" id="mail" class="f_input" /></td>
-			</tr>
-			[/not-logged]
-			<tr>
-				<td class="label">
-					Комментарий:
-				</td>
-				<td class="editorcomm">{editor}</td>
-			</tr>
-			[question]
-			<tr>
-				<td class="label">
-					Вопрос:
-				</td>
-				<td>
-					<div>{question}</div>
-				</td>
-			</tr>
-			<tr>
-				<td class="label">
-					Ответ:<span class="impot">*</span>
-				</td>
-				<td>
-					<div><input type="text" name="question_answer" id="question_answer" class="f_input" /></div>
-				</td>
-			</tr>
-			[/question]
-			[sec_code]
-			<tr>
-				<td class="label">
-					Введите код: <span class="impot">*</span>
-				</td>
-				<td>
-					<div>{sec_code}</div>
-					<div><input type="text" name="sec_code" id="sec_code" style="width:115px" class="f_input" /></div>
-				</td>
-			</tr>
-			[/sec_code]
-			[recaptcha]
-			<tr>
-				<td class="label">
-					Введите два слова, показанных на изображении: <span class="impot">*</span>
-				</td>
-				<td>
-					<div>{recaptcha}</div>
-				</td>
-			</tr>
-			[/recaptcha]
-		</table>
-		<div class="fieldsubmit">
-			<button type="submit" name="submit" class="fbutton"><span>[not-aviable=comments]Добавить[/not-aviable][aviable=comments]Изменить[/aviable]</span></button>
+<div id="addcomment" class="addcomment">
+	<div class="plus_icon"><span>Добавить комментарий</span></div>
+	<div class="box_in">
+		<h3>Оставить комментарий</h3>
+		<ul class="ui-form">
+		[not-logged]
+			<li class="form-group combo">
+				<div class="combo_field"><input placeholder="Ваше имя" type="text" name="name" id="name" class="wide" required></div>
+				<div class="combo_field"><input placeholder="Ваш e-mail" type="email" name="mail" id="mail" class="wide"></div>
+			</li>
+		[/not-logged]
+			<li id="comment-editor">{editor}</li>    
+		[recaptcha]
+			<li>{recaptcha}</li>
+		[/recaptcha]
+		[question]
+			<li class="form-group">
+				<label for="question_answer">{question}</label>
+				<input placeholder="Ответ" type="text" name="question_answer" id="question_answer" class="wide" required>
+			</li>
+		[/question]
+		</ul>
+		<div class="form_submit">
+		[sec_code]
+			<div class="c-captcha">
+				{sec_code}
+				<input placeholder="Повторите код" title="Введите код указанный на картинке" type="text" name="sec_code" id="sec_code" required>
+			</div>
+		[/sec_code]
+			<button class="btn btn-big" type="submit" name="submit" title="Отправить комментарий"><b>Отправить комментарий</b></button>
 		</div>
 	</div>
 </div>

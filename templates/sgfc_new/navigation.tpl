@@ -1,12 +1,11 @@
-<div class="basecont ignore-select">
-	<div class="basenavi">
-		<div class="bnnavi">
-			<div class="navigation">{pages}</div>
-			<div class="nextprev">
-				[prev-link]<span class="thide pprev">Назад</span>[/prev-link]
-				[next-link]<span class="thide pnext">Вперед</span>[/next-link]
-			</div>
-		</div>
+<div class="navigation ignore-select"[available=lastcomments] style="padding: 4% 8%;"[/available]>
+	<div class="page_next-prev">
+		<span class="page_prev" title="Предыдущая страница">
+			[prev-link]<svg class="icon icon-left"><use xlink:href="#icon-left"></use></svg>[/prev-link]
+		</span>
+		<span class="page_next" title="Следующая страница">
+			[next-link]<svg class="icon icon-right"><use xlink:href="#icon-right"></use></svg>[/next-link]
+		</span>
 	</div>
-	<div class="clr"></div>
+	<div class="pages">{pages}</div>
 </div>

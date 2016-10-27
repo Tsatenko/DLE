@@ -1,142 +1,85 @@
-[pmlist]
-<h2 class="heading" style="margin: 0;">Список сообщений</h2>
-[/pmlist]
-[newpm]
-<h2 class="heading" style="margin: 0;">Новое сообщение</h2>
-[/newpm]
-[readpm]
-<h2 class="heading" style="margin: 0;">Ваши сообщения</h2>
-[/readpm]
-<div class="basecont">
-<div class="pm_status">
-	<div class="pm_status_head">Состояние папок</div>
-	<div class="pm_status_content">Папки персональных сообщений заполнены на:
-{pm-progress-bar}
-{proc-pm-limit}% от лимита ({pm-limit} сообщений)
-	</div>
-</div>
-<div style="padding-top:10px;">[inbox]Входящие сообщения[/inbox]<br /><br />
-[outbox]Отправленные сообщения[/outbox]<br /><br />
-[new_pm]Отправить сообщение[/new_pm]</div>
-<br />
-<div class="clr"></div>
-<br />
-[pmlist]
-<br /><div class="basecont">{pmlist}</div>
-[/pmlist]
-[newpm]
-<br />
-<div class="brdform">
-	<div class="baseform">
-		<table class="tableform">
-			<tr>
-				<td class="label">
-					Кому:
-				</td>
-				<td><input type="text" name="name" value="{author}" class="f_input" /></td>
-			</tr>
-			<tr>
-				<td class="label">
-					Тема:<span class="impot">*</span>
-				</td>
-				<td><input type="text" name="subj" value="{subj}" class="f_input" /></td>
-			</tr>
-			<tr>
-				<td class="label">
-					Сообщение:<span class="impot">*</span>
-				</td>
-				<td class="editorcomm">
-				{editor}<br />
-				<div class="checkbox"><input type="checkbox" id="outboxcopy" name="outboxcopy" value="1" /> <label for="outboxcopy">Сохранить сообщение в папке "Отправленные"</label></div>
-				</td>
-			</tr>
-			[sec_code]
-			<tr>
-				<td class="label">
-					Enter code:<span class="impot">*</span>
-				</td>
-				<td>
-					<div>{sec_code}</div>
-					<div><input type="text" name="sec_code" id="sec_code" style="width:115px" class="f_input" /></div>
-				</td>
-			</tr>
-			[/sec_code]
-			[recaptcha]
-			<tr>
-				<td class="label">
-					Введите два слова, показанных на изображении: <span class="impot">*</span>
-				</td>
-				<td>
-					<div>{recaptcha}</div>
-				</td>
-			</tr>
-			[/recaptcha]
-			[question]
-				<tr>
-					<td class="label">
-						Вопрос:
-					</td>
-					<td>
-						<div>{question}</div>
-					</td>
-				</tr>
-				<tr>
-					<td class="label">
-						Ответ:<span class="impot">*</span>
-					</td>
-					<td>
-						<div><input type="text" name="question_answer" id="question_answer" class="f_input" /></div>
-					</td>
-				</tr>
-			[/question]
-		</table>
-		<div class="fieldsubmit">
-			<button type="submit" name="add" class="fbutton"><span>Отправить</span></button>
-			<input type="button" class="fbutton" onclick="dlePMPreview()" title="Просмотр" value="Просмотр" />
-		</div>	
-	</div>
-</div>
-[/newpm]
-[readpm]
-<div class="basecont">
-	<div class="bcomment">
-		<div class="lcol">
-			<span class="thide arcom">&lt;</span>
-			<div class="avatar"><img src="{foto}" alt=""/></div>
-			<h5>{author}</h5>
-			<p>{date}</p>
-		</div>
-		<div class="rcol">
-			<div class="combox">
-				<script type="text/javascript">//<![CDATA[
-				$(function(){ $("#pinfb").Button("#pinfc"); });
-				//]]></script>
-				<div class="infbtn">
-					<span id="pinfb" class="thide" title="Информация к новости">Информация к новости</span>
-					<div id="pinfc" class="infcont">
-						<ul>
-							<li><i>Группа: {group-name}</i></li>
-							<li><i>ICQ: {icq}</i></li>
-							<li><i>Регистрация: {registration}</i></li>
-							<li><i>Публикаций: {news-num}</i></li>
-							<li><i>Комментариев: {comm-num}</i></li>
-						</ul>
-					</div>
-				</div>
-				<h3 style="margin-bottom: 0.4em;">[reply]{subj}[/reply]</h3>
-				{text}
-				[signature]<br clear="all" /><div class="signature">--------------------</div><div class="slink">{signature}</div><br />[/signature]
-				<div class="comedit">
-					<span class="argreply">[reply]<b>Ответить</b>[/reply]</span>
-					<span class="arg">[complaint]Пожаловаться[/complaint]</span>
-					<span class="arg">[ignore]Игнорировать[/ignore]</span>
-					<span class="arg">[del]Удалить[/del]</span>
-					<div class="clr"></div>
-				</div>
+<article class="box story">
+	<div class="box_in">
+		<h1 class="title h1">Личные сообщения</h1>
+		<div class="pm-box">
+			<nav id="pm-menu">
+				[inbox]<span>Входящие</span>[/inbox]
+				[outbox]<span>Отправленые</span>[/outbox]
+				[new_pm]<span>Создать сообщение</span>[/new_pm]
+			</nav>
+			<div class="pm_status">
+				{pm-progress-bar}
+				{proc-pm-limit} % / ({pm-limit} сообщений)
 			</div>
 		</div>
-		<div class="clr"></div>
+		[pmlist]
+		<div class="pmlist">
+			{pmlist}
+		</div>
+		[/pmlist]
+		[newpm]
+		<h4 class="heading">Создать сообщение</h4>
+		<div class="addform addpm">
+			<ul class="ui-form">
+				<li class="form-group combo">
+					<div class="combo_field">
+						<input placeholder="Имя адресата" type="text" name="name" value="{author}" class="wide" required>
+					</div>
+					<div class="combo_field">
+						<input placeholder="Тема сообщения" type="text" name="subj" value="{subj}" class="wide" required>
+					</div>
+				</li>
+				<li id="comment-editor">{editor}</li>    
+			[recaptcha]
+				<li>{recaptcha}</li>
+			[/recaptcha]
+			[question]
+				<li class="form-group">
+					<label for="question_answer">Вопрос: {question}</label>
+					<input placeholder="Ответ" type="text" name="question_answer" id="question_answer" class="wide" required>
+				</li>
+			[/question]
+			</ul>
+			<div class="form_submit">
+				[sec_code]
+					<div class="c-captcha">
+						{sec_code}
+						<input placeholder="Повторите код" title="Введите код указанный на картинке" type="text" name="sec_code" id="sec_code" required>
+					</div>
+				[/sec_code]
+				<button class="btn btn-big" type="submit" name="add"><b>Отправить</b></button>
+				<button class="btn-border btn-big" type="button" onclick="dlePMPreview()">Предпросмотр</button>
+			</div>
+		</div>
+		[/newpm]
 	</div>
-</div>
-[/readpm]
-</div>
+	[readpm]
+	<div class="comment" id="{comment-id}">
+		<div class="com_info">
+			<div class="avatar">
+				<span class="cover" style="background-image: url({foto});">{login}</span>
+				[online]<span class="com_online" title="{login} - онлайн">Онлайн</span>[/online]
+			</div>
+			<div class="com_user">
+				<b class="name">{author}</b>
+				<span class="grey">
+					от {date}
+				</span>
+			</div>
+			<div class="meta">
+				<ul class="left">
+					<li class="reply grey" title="Ответить">[reply]<svg class="icon icon-reply"><use xlink:href="#icon-reply"></use></svg><span>Ответить</span>[/reply]</li>
+					<li class="reply grey" title="Игнорировать">[ignore]<svg class="icon icon-reply"><use xlink:href="#icon-dislike"></use></svg><span>Игнорировать</span>[/ignore]</li>
+					<li class="complaint" title="Жалоба">[complaint]<svg class="icon icon-bad"><use xlink:href="#icon-bad"></use></svg><span class="title_hide">Жалоба</span>[/complaint]</li>
+					<li class="del" title="Удалить">[del]<svg class="icon icon-cross"><use xlink:href="#icon-cross"></use></svg><span class="title_hide">Удалить</span>[/del]</li>
+				</ul>
+			</div>
+		</div>
+		<div class="com_content">
+			<h4 class="title">{subj}</h4>
+			<div class="text">{text}</div>
+			[signature]<div class="signature">--------------------<br />{signature}</div>[/signature]
+		</div>
+	</div>
+	[/readpm]
+</article>

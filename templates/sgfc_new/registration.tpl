@@ -1,117 +1,95 @@
-<h2 class="heading">
-	[registration]Регистрация нового пользователя[/registration]
-	[validation]Обновление профиля пользователя[/validation]
-</h2>
-<div class="brdform">
-	<div class="baseform">
-		<table class="tableform">
-			<tr>
-				<td colspan="2">
+<div class="page_form__inner">
+	<h1 class="title h1">
+		[registration]Регистрация[/registration]
+		[validation]Продолжение регистрации[/validation]
+	</h1>
+	<div class="page_form__form">
+		<div class="regtext">
 		[registration]
-				<b>Здравствуйте, уважаемый посетитель нашего сайта!</b><br />
-				Регистрация на нашем сайте позволит Вам быть его полноценным участником.
-				Вы сможете добавлять новости на сайт, оставлять свои комментарии, просматривать скрытый текст и многое другое.
-				<br />В случае возникновения проблем с регистрацией, обратитесь к <a href="/index.php?do=feedback">администратору</a> сайта.
+			Регистрация на нашем сайте позволит Вам быть его полноценным участником.
+			Вы сможете добавлять новости на сайт, оставлять свои комментарии, просматривать скрытый текст и многое другое.
+			<br>В случае возникновения проблем с регистрацией, обратитесь к <a href="/index.php?do=feedback">администратору</a> сайта.
 		[/registration]
 		[validation]
-				<b>Уважаемый посетитель,</b><br />
-				Ваш аккаунт был зарегистрирован на нашем сайте,
-				однако информация о Вас является неполной, поэтому заполните дополнительные поля в Вашем профиле.
+			Ваш аккаунт был зарегистрирован на нашем сайте,
+			однако информация о Вас является неполной, поэтому ОБЯЗАТЕЛЬНО заполните дополнительные поля в Вашем профиле.<br>
 		[/validation]
-				</td>
-			</tr>
+		</div>
+		<ul class="ui-form">
 		[registration]
-			<tr>
-				<td class="label">
-					Логин:<span class="impot">*</span>
-				</td>
-				<td>
-					<input style="float: left;" type="text" name="name" id='name' style="width:175px; margin-right: 6px;" class="f_input" /><input class="bbcodes" style="font-size: 11px; float: left;" title="Проверить доступность логина для регистрации" onclick="CheckLogin(); return false;" type="button" value="Проверить имя" />
-					<br /><br /><div id='result-registration'></div>
-				</td>
-			</tr>
-			<tr>
-				<td class="label">
-					Пароль:<span class="impot">*</span>
-				</td>
-				<td><input type="password" name="password1" class="f_input" /></td>
-			</tr>
-			<tr>
-				<td class="label">
-					Повторите пароль:<span class="impot">*</span>
-				</td>
-				<td><input type="password" name="password2" class="f_input" /></td>
-			</tr>
-			<tr>
-				<td class="label">Ваш E-Mail:<span class="impot">*</span></td>
-				<td><input type="text" name="email" class="f_input" /></td>
-			</tr>
+			<li class="form-group">
+				<label for="name">Логин</label>
+				<div class="login_check">
+					<input type="text" name="name" id="name" class="wide" required>
+					<button class="btn" title="Проверить" onclick="CheckLogin(); return false;">Проверить</button>
+				</div>
+				<div id="result-registration"></div>
+			</li>
+			<li class="form-group">
+				<label for="password1">Пароль</label>
+				<input type="password" name="password1" id="password1" class="wide" required>
+			</li>
+			<li class="form-group">
+				<label for="password2">Повторите пароль</label>
+				<input type="password" name="password2" id="password2" class="wide" required>
+			</li>
+			<li class="form-group">
+				<label for="email">E-mail</label>
+				<input type="email" name="email" id="email" class="wide" required>
+			</li>
 		[question]
-		<tr>
-			<td class="label">
-				Вопрос:
-			</td>
-			<td>
-				<div>{question}</div>
-			</td>
-		</tr>
-		<tr>
-			<td class="label">
-				Ответ:<span class="impot">*</span>
-			</td>
-			<td>
-				<div><input type="text" name="question_answer" class="f_input" /></div>
-			</td>
-		</tr>
+			<li class="form-group">
+				<label for="question_answer">{question}</label>
+				<input placeholder="Введите ответ" type="text" name="question_answer" id="question_answer" class="wide" required>
+			</li>
 		[/question]
-			[sec_code]
-			<tr>
-				<td class="label">
-					Введите код<br />с картинки:<span class="impot">*</span>
-				</td>
-				<td>
-					<div>{reg_code}</div>
-					<div><input type="text" name="sec_code" style="width:115px" class="f_input" /></div>
-				</td>
-			</tr>
-			[/sec_code]
-			[recaptcha]
-			<tr>
-				<td class="label">
-					Введите два слова, показанных на изображении: <span class="impot">*</span>
-				</td>
-				<td>
-					<div>{recaptcha}</div>
-				</td>
-			</tr>
-			[/recaptcha]
+		[sec_code]
+			<li class="form-group">
+				<div class="c-captcha">
+					{reg_code}
+					<input placeholder="Повторите код" title="Введите код указанный на картинке" type="text" name="sec_code" id="sec_code" required>
+				</div>
+			</li>
+		[/sec_code]
+		[recaptcha]
+			<li>{recaptcha}</li>
+		[/recaptcha]
 		[/registration]
 		[validation]
-			<tr>
-				<td class="label">Ваше Имя:</td>
-				<td><input type="text" name="fullname" class="f_input" /></td>
-			</tr>
-			<tr>
-				<td class="label">Место жительства:</td>
-				<td><input type="text" name="land" class="f_input" /></td>
-			</tr>
-			<tr>
-				<td class="label">Номер ICQ:</td>
-				<td><input type="text" name="icq" class="f_input" /></td>
-			</tr>
-			<tr>
-				<td class="label">Фото:</td>
-				<td><input type="file" name="image" style="width:304px; height:18px" class="f_input" /></td>
-			</tr>
-			<tr>
-				<td class="label">О себе:</td>
-				<td><textarea name="info" style="width: 98%;" rows="8" class="f_textarea" /></textarea></td>
-			</tr>
-			{xfields}
+			<li class="form-group">
+				<label for="fullname">Ваше имя</label>
+				<input type="text" id="fullname" name="fullname" class="wide">
+			</li>
+			<li class="form-group">
+				<label for="land">Место жительства</label>
+				<input type="text" id="land" name="land" class="wide">
+			</li>
+			<li class="form-group">
+				<label for="image">О себе</label>
+				<textarea id="info" name="info" rows="5" class="wide"></textarea>
+			</li>
+			<li class="form-group">
+				<label for="image">Аватар</label>
+				<input type="file" id="image" name="image" class="wide">
+			</li>
+			<li class="form-group">
+				<table class="xfields">
+					{xfields}
+				</table>
+			</li>
 		[/validation]
-		</table>
-		<div class="fieldsubmit">
-			<button name="submit" class="fbutton" type="submit"><span>Отправить</span></button>
+		</ul>
+		<div class="form_submit">
+			<button class="btn" name="submit" type="submit">Зарегистрироваться</button>
 		</div>
 	</div>
+</div>
+
+
+
+<div class="page addform">
+	<table class="tableform">
+
+
+	</table>
 </div>

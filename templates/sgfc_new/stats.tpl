@@ -1,34 +1,42 @@
-<h2 class="heading">Статистика сайта</h2>
-<div class="lines">
-	<ul class="reset">
-		<li>За сутки: Добавлено <b>{news_day} новостей</b> и <b>{comm_day} комментариев</b>, зарегистрировано <b>{user_day} пользователей</b></li>
-		<li>За неделю: Добавлено <b>{news_week} новостей</b> и <b>{comm_week} комментариев</b>, зарегистрировано <b>{user_week} пользователей</b></li>
-		<li>За месяц: Добавлено <b>{news_month} новостей</b> и <b>{comm_month} комментариев</b>, зарегистрировано <b>{user_month} пользователей</b></li>
-	</ul>
-</div>
-<div class="basecont statistics">
-	<ul class="lcol reset">
-		<li><h5 class="red">Новости:</h5></li>
-		<li>Общее кол-во новостей: <b class="blue">{news_num}</b></li>
-		<li>Из них опубликовано: <b class="blue">{news_allow}</b></li>
-		<li>Опубликовано на главной: <b class="blue">{news_main}</b></li>
-		<li>Ожидает модерации: <b class="blue">{news_moder}</b></li>
-	</ul>
-	<ul class="lcol reset">
-		<li><h5 class="red">Пользователи:</h5></li>
-		<li>Общее кол-во пользователей: <b class="blue">{user_num}</b></li>
-		<li>Из них забанено: <b class="blue">{user_banned}</b></li>
-	</ul>
-	<ul class="lcol reset">
-		<li><h5 class="red">Комментарии:</h5></li>
-		<li>Кол-во комментариев: <b class="blue">{comm_num}</b></li>
-		<li><a href="/?do=lastcomments">Посмотреть последние</a></li>
-	</ul>
-	<br clear="all" />
-</div>
-<p><b>Общий размер базы данных: {datenbank}</b></p>
-<br /><br /><br />
-<div class="basecont">
-	<h2 class="heading">Список лучших пользователей</h2>
-	<table width="100%" class="userstop">{topusers}</table>
-</div>
+<article class="box story">
+	<div class="box_in dark_top stats_head">
+		<h1 class="title">Статистика сайта</h1>
+		<ul>
+			<li class="stats_d"><b>За сутки</b> <span>{news_day} новостей и {comm_day} комментариев, зарегистрировано {user_day} пользователей</span></li>
+			<li class="stats_w"><b>За неделю</b> <span>{news_week} новостей и {comm_week} комментариев, зарегистрировано {user_week} пользователей</span></li>
+			<li class="stats_m"><b>За месяц</b> <span>{news_month} новостей и {comm_month} комментариев, зарегистрировано {user_month} пользователей</span></li>
+		</ul>
+	</div>
+	<div class="box_in">
+		<div class="statistics">
+			<div class="stat_group">
+				<h5 class="blue">Новости</h5>
+				<ul>
+					<li>Общее кол-во новостей <b class="right">{news_num}</b></li>
+					<li>Из них опубликовано <b class="right">{news_allow}</b></li>
+					<li>Опубликовано на главной <b class="right">{news_main}</b></li>
+					<li>Ожидает модерации <b class="right">{news_moder}</b></li>
+				</ul>
+			</div>
+			<div class="stat_group">
+				<h5 class="blue">Пользователи</h5>
+				<ul>
+					<li>Общее кол-во пользователей <b class="right">{user_num}</b></li>
+					<li>Из них забанено <b class="right">{user_banned}</b></li>
+				</ul>
+			</div>
+			<div class="stat_group">
+				<h5 class="blue">Комментарии</h5>
+				<ul>
+					<li>Кол-во комментариев <b class="right">{comm_num}</b></li>
+					<li><a href="/?do=lastcomments">Посмотреть последние</a></li>
+				</ul>
+			</div>
+			<p class="grey">Общий размер базы данных: {datenbank}</p>
+		</div>
+		<h4 class="heading">Лучшие пользователи</h4>
+		<div class="table_top_users">
+			<table class="userstop">{topusers}</table>
+		</div>
+	</div>
+</article>
