@@ -22,7 +22,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-<div class="font_test_oswaldregular">Font test font_test_opsa</div>
+<div class="font_test_oswaldregular">
+    Font test font_test_opsa
+    <i class="fa fa-sign-language" aria-hidden="true"></i>
+</div>
 <div id="wrapper">
     <div id="header">HEADER</div>
     <div class="container">

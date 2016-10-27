@@ -80,6 +80,9 @@ h5, .h5 {
   font: bold 60px/normal 'oswaldregular';
   text-transform: uppercase;
   color: red; }
+  .font_test_oswaldregular i {
+    font-size: 72px;
+    color: #00aa55; }
 
 #wrapper a {
   outline: none;
