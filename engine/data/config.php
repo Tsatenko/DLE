@@ -26,7 +26,7 @@ $config = array (
 
 'langs' => 'Russian',
 
-'skin' => 'Gemini',
+'skin' => 'sgfc_new',
 
 'allow_admin_wysiwyg' => '0',
 

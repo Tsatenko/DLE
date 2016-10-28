@@ -27,7 +27,10 @@
     <i class="fa fa-sign-language" aria-hidden="true"></i>
 </div>
 <div id="wrapper">
-    <div id="header">HEADER</div>
+    <div id="header">
+        HEADER
+        {changeskin}
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
@@ -36,7 +39,48 @@
             <div class="col-lg-6">
                 center
             </div>
-            <div class="col-lg-3 color_colum">
+            <div class="col-lg-3 color_colum-">
+                <br>
+                <br>
+                <div class="block">
+                    <div class="bl_header">
+                        <div class="head-txt">Celebrity <span>Tapes</span></div>
+                        <div class="head-ico">
+                            <img src="/uploads/ico_1.png">
+                            {*<i class="fa fa-plus-square-o"></i>*}
+                        </div>
+                    </div>
+                    <div class="bl_content">
+                        <img src="/uploads/img_01.jpg">
+                    </div>
+                    <div class="bl_foter">
+                        <div>
+                            footer
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="bl_header">
+                        <div class="head-txt">BUSTY <span>MODELS</span></div>
+                        <div class="head-ico">
+                            <img src="/uploads/ico_1.png">
+                            {*<i class="fa fa-plus-square-o"></i>*}
+                        </div>
+                    </div>
+                    <div class="bl_content">
+                        <img src="/uploads/img_02.jpg">
+                    </div>
+                    <div class="bl_foter">
+                        <div>
+                            footer
+                        </div>
+                    </div>
+                </div>
+                <div class="bl_content">
+
+                </div>
+
                 <div class="block">
                     <div class="bl_header">
                         {*<div class="t_h4">CELEBRITY <span>TAPES</span></div>*}
@@ -73,24 +117,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="block">
-                    <div class="bl_header">
-                        <div class="t_h4">Title <span>Block</span></div>
-                    </div>
-                    <div class="bl_content">
-                        dsfasdf
-                        {*<span class="fa-stack">*}
-                        {*<i class="fa fa-circle-thin fa-stack-2x"></i>*}
-                        {*<i class="fa fa-plus fa-stack-1x"></i>*}
-                        {*</span>*}
-                        {*fa-twitter on fa-square-o<br>*}
-                    </div>
-                    <div class="bl_foter">
-                        <div>
-                            footer
-                        </div>
-                    </div>
-                </div>
+
 
             </div>
         </div>

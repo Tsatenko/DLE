@@ -38,6 +38,7 @@ $color-black_st-1: #202020;
 $color-red_st-1: #ee2f77;
 $color-grey_st-1: #cecece;
 $color-white_st-1: white;
+$color-bg_st-1: #F5F5F5;
 
 $padding_st-1: 10px;
 
@@ -52,6 +53,7 @@ $padding_st-1: 10px;
 }
 
 #wrapper {
+  background-color: $color-bg_st-1;
   a {
     outline: none;
     color: #00aa55;
@@ -86,11 +88,11 @@ $padding_st-1: 10px;
     .head-txt {
       //font: bold 16px/normal 'Oswald';
       font-family: 'Oswald-Light', sans-serif;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bold;
       color: $color-black_st-1;
       text-transform: uppercase;
-      padding-left: $padding_st-1;
+      padding: 12px $padding_st-1 7px $padding_st-1;
       span {
         color: $color-red_st-1;
       }
@@ -103,6 +105,12 @@ $padding_st-1: 10px;
     }
   }
   .bl_content {
+    text-align: center;
+    margin: 5px;
+    img {
+      width: 100%;
+      height: auto;
+    }
     //padding: 0 $padding-st-1;
     //color: limegreen;
   }
