@@ -26,6 +26,34 @@
     CELEBRITY TAPES
     <i class="fa fa-sign-language" aria-hidden="true"></i>
 </div>
+<div class="flex-container">
+    <div class="flex-items">
+        1
+        <img src="/uploads/img_02.jpg">
+    </div>
+    <div class="flex-items">
+        <img src="/uploads/img_02.jpg">
+    </div>
+    <div class="flex-items">
+        <img src="/uploads/img_02.jpg">
+    </div>
+    <div class="flex-items">
+        <img src="/uploads/img_02.jpg">
+    </div>
+    <div class="flex-items">
+        5
+    </div>
+    <div class="flex-items">
+        6
+    </div>
+    <div class="flex-items">
+        7
+    </div>
+    <div class="flex-items">
+        8
+    </div>
+
+</div>
 <div id="wrapper">
     <div id="header">
         HEADER
@@ -34,10 +62,87 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
-                left
+                <br>
+                <br>
+                <div class="block">
+                    <div class="bl_header">
+                        <div class="head-txt">BUSTY <span>MODELS</span></div>
+                        <div class="head-ico">
+                            <img src="/uploads/ico_1.png">
+                            {*<i class="fa fa-plus-square-o"></i>*}
+                        </div>
+                    </div>
+                    <div class="bl_content">
+                        <img src="/uploads/img_02.jpg">
+                    </div>
+                    <div class="bl_foter">
+                        <div>
+                            footer
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="bl_header">
+                        <div class="head-txt">Celebrity <span>Tapes</span></div>
+                        <div class="head-ico">
+                            <img src="/uploads/ico_1.png">
+                            {*<i class="fa fa-plus-square-o"></i>*}
+                        </div>
+                    </div>
+                    <div class="bl_content">
+                        <img src="/uploads/img_01.jpg">
+                    </div>
+                    <div class="bl_foter">
+                        <div>
+                            footer
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="bl_header">
+                        <div class="head-txt">Celebrity <span>Tapes</span></div>
+                        <div class="head-ico">
+                            <img src="/uploads/ico_1.png">
+                            {*<i class="fa fa-plus-square-o"></i>*}
+                        </div>
+                    </div>
+                    <div class="bl_content">
+                        <img src="/uploads/img_04_g.jpg">
+                    </div>
+                    <div class="bl_foter">
+                        <div>
+                            footer
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-6">
-                center
+                <div class="row padding_plus">
+                    <br>
+                    <br>
+                    <div class="block-content">
+                        <div class="content-title">Head Semple Text</div>
+                        <div class="content-img" >
+                            <img src="/uploads/img_05.jpg">
+                        </div>
+                        <div class="content-footer">Lorem Ipsum</div>
+                    </div>
+                    <div class="block-content">
+                        <div class="content-title">Head Semple Text</div>
+                        <div class="content-img" >
+                            <img src="/uploads/img_06.jpg">
+                        </div>
+                        <div class="content-footer">Lorem Ipsum</div>
+                    </div>
+                    <div class="block-content">
+                        <div class="content-title">Head Semple Text</div>
+                        <div class="content-img" >
+                            <img src="/uploads/img_07.jpg">
+                        </div>
+                        <div class="content-footer">Lorem Ipsum</div>
+                    </div>
+                </div>
+
             </div>
             <div class="col-lg-3 color_colum-">
                 <br>
@@ -121,8 +226,65 @@
 
             </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="flex-container">
+                <div class="flex-items">
+                    1
+                    <img src="/uploads/img_02.jpg">
+                </div>
+                <div class="flex-items">
+                    <img src="/uploads/img_02.jpg">
+                </div>
+                <div class="flex-items">
+                    <img src="/uploads/img_02.jpg">
+                </div>
+                <div class="flex-items">
+                    <img src="/uploads/img_02.jpg">
+                </div>
+                <div class="flex-items">
+5
+                </div>
+                <div class="flex-items">
+6
+                </div>
+                <div class="flex-items">
+7
+                </div>
+                <div class="flex-items">
+8
+                </div>
 
+            </div>
+
+            {*<div class="short-story_small">*}
+                {*111*}
+            {*</div>*}
+            {*<div class="short-story_small">*}
+                {*111*}
+            {*</div>*}
+            {*<div class="short-story_small">*}
+                {*111*}
+            {*</div>*}
+            {*<div class="short-story_small">*}
+                {*111*}
+            {*</div>*}
+            {*<div class="short-story_small">*}
+                {*111*}
+            {*</div>*}
+            {*<div class="short-story_small">*}
+                {*111*}
+            {*</div>*}
+
+        </div>
+
+    </div>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <div id="content" class="container">
         <div  class="row">
