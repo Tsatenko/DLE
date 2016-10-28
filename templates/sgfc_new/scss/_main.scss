@@ -1,19 +1,3 @@
-//@font-face {
-//  font-family: 'oswaldregular';
-//  src: url('../fonts/oswald/oswald-regularitalic-webfont.eot');
-//  src: url('../fonts/oswald/oswald-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
-//  url('../fonts/oswald/oswald-regularitalic-webfont.woff2') format('woff2'),
-//  url('../fonts/oswald/oswald-regularitalic-webfont.woff') format('woff'),
-//  url('../fonts/oswald/oswald-regularitalic-webfont.ttf') format('truetype'),
-//  url('../fonts/oswald/oswald-regularitalic-webfont.svg#oswaldregular') format('svg');
-//  font-weight: normal;
-//  font-style: normal;
-//
-//}
-
-
-
-
 /* =========== © 2016 Centroarts.com =========== */
 
 /* Сброс */
@@ -25,7 +9,7 @@ body { min-height: 100%; }
 html, html a { -webkit-font-smoothing: antialiased; }
 //Настройка основной типографики 2
 body, select, input, textarea, button {
-  font: normal 14px/1.5 Arial, Helvetica, sans-serif;
+  //font: normal 14px/1.5 Arial, Helvetica, sans-serif;
   color: #353535;
   outline: none;
 }
@@ -35,9 +19,9 @@ body, select, input, textarea, button {
 /* Заголовки H1-6 */
 h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
   margin: 2em 0 .6em 0;
-  letter-spacing: -0.01em;
+  letter-spacing: normal;
   line-height: normal;
-  font-weight: bold;
+  //font-weight: bold;
   text-rendering: optimizeLegibility;
 }
 h1, .h1 { font-size: 23px; }
@@ -48,16 +32,19 @@ h5, .h5 { font-size: 16px; }
 
 $color_grey_1: #444444;
 $color_grey_2: #777777;
-$color_white_1: white;
-$color_black_1: blue;
-$color_red: red;
 
-$padding-st-1: 10px;
+
+$color-black_st-1: #202020;
+$color-red_st-1: #ee2f77;
+$color-grey_st-1: #cecece;
+$color-white_st-1: white;
+
+$padding_st-1: 10px;
 
 .font_test_oswaldregular {
-  font: bold 60px/normal 'oswaldregular';
+  font: bold 16px/normal 'Oswald';
   text-transform: uppercase;
-  color: red;
+  color: $color-red_st-1;
   i {
     font-size: 72px;
     color: #00aa55;
@@ -72,7 +59,7 @@ $padding-st-1: 10px;
   }
   a:hover {
     text-decoration: none;
-    color: $color_white_1;
+    color: $color-white_st-1;
   }
   a img { border: 0 none; }
   a > img { vertical-align: center; }
@@ -82,29 +69,45 @@ $padding-st-1: 10px;
   background-color: lightgoldenrodyellow;
 }
 
-
 .block {
-  background-color: gainsboro;
-  border: 1px solid $color_grey_1;
+  background-color: $color-white_st-1;
+  border: 1px solid $color-grey_st-1;
   border-radius: 4px;
   margin-bottom: 15px;
-  h4 {
-    padding: 0 $padding-st-1;
-    text-transform: uppercase;
-    color: $color_black_1;
-    span {
-      color: $color_red;
-    }
-  }
   .bl_header {
-    border-bottom: 1px solid $color_grey_1;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid $color-grey_st-1;
+    .head-txt {
+      //font: bold 16px/normal 'Oswald';
+      font-family: 'Oswald-Light', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: $color-black_st-1;
+      text-transform: uppercase;
+      padding-left: $padding_st-1;
+      span {
+        color: $color-red_st-1;
+      }
+    }
+    .head-ico {
+      padding-right: $padding_st-1;
+      i {
+        font-size: 50px;
+      }
+    }
   }
   .bl_content {
     //padding: 0 $padding-st-1;
     //color: limegreen;
   }
   .bl_foter {
-    padding: 0 $padding-st-1;
+    padding: 0 $padding_st-1;
     color: blue;
   }
 }
@@ -112,8 +115,8 @@ $padding-st-1: 10px;
 .bl_content_category {
   li {
     border-bottom: 1px solid red;
-    background-color: $color_white_1;
-    padding: 10px $padding-st-1;
+    background-color: $color-white_st-1;
+    padding: 10px $padding_st-1;
   }
   li:hover {
     background-color: $color_grey_2;

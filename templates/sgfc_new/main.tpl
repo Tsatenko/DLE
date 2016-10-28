@@ -23,7 +23,7 @@
 </head>
 <body>
 <div class="font_test_oswaldregular">
-    Font test font_test_opsa
+    CELEBRITY TAPES
     <i class="fa fa-sign-language" aria-hidden="true"></i>
 </div>
 <div id="wrapper">
@@ -39,7 +39,14 @@
             <div class="col-lg-3 color_colum">
                 <div class="block">
                     <div class="bl_header">
-                        <h4>Title <span>Block</span></h4>
+                        {*<div class="t_h4">CELEBRITY <span>TAPES</span></div>*}
+                        {*<i class="fa fa-plus-square-o" aria-hidden="true"></i>*}
+                        {*<div class="flex-container">*}
+                            <div class="head-txt">Celebrity <span>Tapes</span></div>
+                            <div class="head-ico">
+                                <i class="fa fa-plus-square-o"></i>
+                            </div>
+                        {*</div>*}
                     </div>
                     <div class="bl_content_category">
                         <ul>
@@ -68,7 +75,7 @@
                 </div>
                 <div class="block">
                     <div class="bl_header">
-                        <h4>Title <span>Block</span></h4>
+                        <div class="t_h4">Title <span>Block</span></div>
                     </div>
                     <div class="bl_content">
                         dsfasdf

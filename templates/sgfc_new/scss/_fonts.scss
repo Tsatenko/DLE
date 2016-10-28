@@ -1,24 +1,353 @@
+$Path_fonts_osvald: "../fonts/oswald/";
+$Path_fonts_opensans: "../fonts/opensans/";
+
+//Пример шрифта Oswald
+//https://www.fontsquirrel.com/fonts/oswald
+
+//Oswald
+//Oswald Italic
+//Oswald Bold
+//Oswald Bold Italic
+//Oswald-Light
+//Oswald-Light Italic
+//Oswald-Extralight
+//Oswald-Extralight Italic
+//Oswald-Medium
+//Oswald-Mmedium Italic
+//Oswald-Demi Bold
+//Oswald-Demi Bold Italic
+//Oswald-Heavy
+//Oswald-Heavy Italic
+//Oswald-Stencil
+
+
+//Пример шрифта Open Sans
+//https://www.fontsquirrel.com/fonts/open-sans
+
+//OpenSans
+//OpenSans Regular Italic
+//OpenSans Italic
+//OpenSans Bold
+//OpenSans Bold Italic
+//OpenSans-Light
+//OpenSans-Light Italic
+//OpenSans-Extra Bold
+//OpenSans-Extra Bold Italic
+//OpenSans-Semi Bold
+//OpenSans-Semi Bold Italic
+
+//----------------- Шрифт Oswald -----------------------
 @font-face {
-  font-family: 'oswaldregular';
-  src: url('../fonts/oswald/oswald-regularitalic-webfont.eot');
-  src: url('../fonts/oswald/oswald-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/oswald/oswald-regularitalic-webfont.woff2') format('woff2'),
-  url('../fonts/oswald/oswald-regularitalic-webfont.woff') format('woff'),
-  url('../fonts/oswald/oswald-regularitalic-webfont.ttf') format('truetype'),
-  url('../fonts/oswald/oswald-regularitalic-webfont.svg#oswaldregular') format('svg');
+  font-family: 'Oswald';
+  src: url($Path_fonts_osvald + 'oswald-regular-webfont.eot');
+  src: url($Path_fonts_osvald + 'oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_osvald + 'oswald-regular-webfont.woff2') format('woff2'),
+  url($Path_fonts_osvald + 'oswald-regular-webfont.woff') format('woff'),
+  url($Path_fonts_osvald + 'oswald-regular-webfont.ttf') format('truetype'),
+  url($Path_fonts_osvald + 'oswald-regular-webfont.svg#oswald_regularregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald Italic';
+  src: url($Path_fonts_osvald + 'oswald-regularitalic-webfont.eot');
+  src: url($Path_fonts_osvald + 'oswald-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_osvald + 'oswald-regularitalic-webfont.woff2') format('woff2'),
+  url($Path_fonts_osvald + 'oswald-regularitalic-webfont.woff') format('woff'),
+  url($Path_fonts_osvald + 'oswald-regularitalic-webfont.ttf') format('truetype'),
+  url($Path_fonts_osvald + 'oswald-regularitalic-webfont.svg#oswaldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald Bold';
+  src: url($Path_fonts_osvald + 'oswald-bold-webfont.eot');
+  src: url($Path_fonts_osvald + 'oswald-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_osvald + 'oswald-bold-webfont.woff2') format('woff2'),
+  url($Path_fonts_osvald + 'oswald-bold-webfont.woff') format('woff'),
+  url($Path_fonts_osvald + 'oswald-bold-webfont.ttf') format('truetype'),
+  url($Path_fonts_osvald + 'oswald-bold-webfont.svg#oswaldbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald Bold Italic';
+  src: url($Path_fonts_osvald + 'oswald-bolditalic-webfont.eot');
+  src: url($Path_fonts_osvald + 'oswald-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_osvald + 'oswald-bolditalic-webfont.woff2') format('woff2'),
+  url($Path_fonts_osvald + 'oswald-bolditalic-webfont.woff') format('woff'),
+  url($Path_fonts_osvald + 'oswald-bolditalic-webfont.ttf') format('truetype'),
+  url($Path_fonts_osvald + 'oswald-bolditalic-webfont.svg#oswaldbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald-Light';
+  src: url($Path_fonts_osvald + 'oswald-light-webfont.eot');
+  src: url($Path_fonts_osvald + 'oswald-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_osvald + 'oswald-light-webfont.woff2') format('woff2'),
+  url($Path_fonts_osvald + 'oswald-light-webfont.woff') format('woff'),
+  url($Path_fonts_osvald + 'oswald-light-webfont.ttf') format('truetype'),
+  url($Path_fonts_osvald + 'oswald-light-webfont.svg#oswaldlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald-Light Italic';
+  src: url($Path_fonts_osvald + 'oswald-lightitalic-webfont.eot');
+  src: url($Path_fonts_osvald + 'oswald-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_osvald + 'oswald-lightitalic-webfont.woff2') format('woff2'),
+  url($Path_fonts_osvald + 'oswald-lightitalic-webfont.woff') format('woff'),
+  url($Path_fonts_osvald + 'oswald-lightitalic-webfont.ttf') format('truetype'),
+  url($Path_fonts_osvald + 'oswald-lightitalic-webfont.svg#oswaldlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald-Extralight';
+  src: url($Path_fonts_osvald + 'oswald-extralight-webfont.eot');
+  src: url($Path_fonts_osvald + 'oswald-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_osvald + 'oswald-extralight-webfont.woff2') format('woff2'),
+  url($Path_fonts_osvald + 'oswald-extralight-webfont.woff') format('woff'),
+  url($Path_fonts_osvald + 'oswald-extralight-webfont.ttf') format('truetype'),
+  url($Path_fonts_osvald + 'oswald-extralight-webfont.svg#oswaldextralight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald-Extralight Italic';
+  src: url($Path_fonts_osvald + 'oswald-extra-lightitalic-webfont.eot');
+  src: url($Path_fonts_osvald + 'oswald-extra-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_osvald + 'oswald-extra-lightitalic-webfont.woff2') format('woff2'),
+  url($Path_fonts_osvald + 'oswald-extra-lightitalic-webfont.woff') format('woff'),
+  url($Path_fonts_osvald + 'oswald-extra-lightitalic-webfont.ttf') format('truetype'),
+  url($Path_fonts_osvald + 'oswald-extra-lightitalic-webfont.svg#oswaldextra-light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald-Medium';
+  src: url($Path_fonts_osvald + 'oswald-medium-webfont.eot');
+  src: url($Path_fonts_osvald + 'oswald-medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_osvald + 'oswald-medium-webfont.woff2') format('woff2'),
+  url($Path_fonts_osvald + 'oswald-medium-webfont.woff') format('woff'),
+  url($Path_fonts_osvald + 'oswald-medium-webfont.ttf') format('truetype'),
+  url($Path_fonts_osvald + 'oswald-medium-webfont.svg#oswaldmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald-Mmedium Italic';
+  src: url($Path_fonts_osvald + 'oswald-mediumitalic-webfont.eot');
+  src: url($Path_fonts_osvald + 'oswald-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_osvald + 'oswald-mediumitalic-webfont.woff2') format('woff2'),
+  url($Path_fonts_osvald + 'oswald-mediumitalic-webfont.woff') format('woff'),
+  url($Path_fonts_osvald + 'oswald-mediumitalic-webfont.ttf') format('truetype'),
+  url($Path_fonts_osvald + 'oswald-mediumitalic-webfont.svg#oswaldmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald-Demi Bold';
+  src: url($Path_fonts_osvald + 'oswald-demibold-webfont.eot');
+  src: url($Path_fonts_osvald + 'oswald-demibold-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_osvald + 'oswald-demibold-webfont.woff2') format('woff2'),
+  url($Path_fonts_osvald + 'oswald-demibold-webfont.woff') format('woff'),
+  url($Path_fonts_osvald + 'oswald-demibold-webfont.ttf') format('truetype'),
+  url($Path_fonts_osvald + 'oswald-demibold-webfont.svg#oswalddemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald-Demi Bold Italic';
+  src: url($Path_fonts_osvald + 'oswald-demi-bolditalic-webfont.eot');
+  src: url($Path_fonts_osvald + 'oswald-demi-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_osvald + 'oswald-demi-bolditalic-webfont.woff2') format('woff2'),
+  url($Path_fonts_osvald + 'oswald-demi-bolditalic-webfont.woff') format('woff'),
+  url($Path_fonts_osvald + 'oswald-demi-bolditalic-webfont.ttf') format('truetype'),
+  url($Path_fonts_osvald + 'oswald-demi-bolditalic-webfont.svg#oswalddemi-bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald-Heavy';
+  src: url($Path_fonts_osvald + 'oswald-heavy-webfont.eot');
+  src: url($Path_fonts_osvald + 'oswald-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_osvald + 'oswald-heavy-webfont.woff2') format('woff2'),
+  url($Path_fonts_osvald + 'oswald-heavy-webfont.woff') format('woff'),
+  url($Path_fonts_osvald + 'oswald-heavy-webfont.ttf') format('truetype'),
+  url($Path_fonts_osvald + 'oswald-heavy-webfont.svg#oswaldheavy') format('svg');
   font-weight: normal;
   font-style: normal;
 
 }
 
-//@font-face {
-//  font-family: 'helveticaneuecyrthin';
-//  src: url('../../fonts/helveticaneuecyr-thin-webfont.eot');
-//  src: url('../../fonts/helveticaneuecyr-thin-webfont.eot?#iefix') format('embedded-opentype'),
-//  url('../../fonts/helveticaneuecyr-thin-webfont.woff2') format('woff2'),
-//  url('../../fonts/helveticaneuecyr-thin-webfont.woff') format('woff'),
-//  url('../../fonts/helveticaneuecyr-thin-webfont.ttf') format('truetype'),
-//  url('../../fonts/helveticaneuecyr-thin-webfont.svg#helveticaneuecyrthin') format('svg');
-//  font-weight: normal;
-//  font-style: normal;
-//}
+@font-face {
+  font-family: 'Oswald-Heavy Italic';
+  src: url($Path_fonts_osvald + 'oswald-heavyitalic-webfont.eot');
+  src: url($Path_fonts_osvald + 'oswald-heavyitalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_osvald + 'oswald-heavyitalic-webfont.woff2') format('woff2'),
+  url($Path_fonts_osvald + 'oswald-heavyitalic-webfont.woff') format('woff'),
+  url($Path_fonts_osvald + 'oswald-heavyitalic-webfont.ttf') format('truetype'),
+  url($Path_fonts_osvald + 'oswald-heavyitalic-webfont.svg#oswaldheavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald-Stencil';
+  src: url($Path_fonts_osvald + 'oswald-stencil-webfont.eot');
+  src: url($Path_fonts_osvald + 'oswald-stencil-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_osvald + 'oswald-stencil-webfont.woff2') format('woff2'),
+  url($Path_fonts_osvald + 'oswald-stencil-webfont.woff') format('woff'),
+  url($Path_fonts_osvald + 'oswald-stencil-webfont.ttf') format('truetype'),
+  url($Path_fonts_osvald + 'oswald-stencil-webfont.svg#oswald_stencilbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//----------------- Шрифт Open Sans -----------------------
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url($Path_fonts_opensans + 'opensansregular-webfont.eot');
+  src: url($Path_fonts_opensans + 'opensansregular-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_opensans + 'opensansregular-webfont.woff2') format('woff2'),
+  url($Path_fonts_opensans + 'opensansregular-webfont.woff') format('woff'),
+  url($Path_fonts_opensans + 'opensansregular-webfont.ttf') format('truetype'),
+  url($Path_fonts_opensans + 'opensansregular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans Regular Italic';
+  src: url($Path_fonts_opensans + 'opensansregularitalic-webfont.eot');
+  src: url($Path_fonts_opensans + 'opensansregularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_opensans + 'opensansregularitalic-webfont.woff2') format('woff2'),
+  url($Path_fonts_opensans + 'opensansregularitalic-webfont.woff') format('woff'),
+  url($Path_fonts_opensans + 'opensansregularitalic-webfont.ttf') format('truetype'),
+  url($Path_fonts_opensans + 'opensansregularitalic-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans Italic';
+  src: url($Path_fonts_opensans + 'opensansitalic-webfont.eot');
+  src: url($Path_fonts_opensans + 'opensansitalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_opensans + 'opensansitalic-webfont.woff2') format('woff2'),
+  url($Path_fonts_opensans + 'opensansitalic-webfont.woff') format('woff'),
+  url($Path_fonts_opensans + 'opensansitalic-webfont.ttf') format('truetype'),
+  url($Path_fonts_opensans + 'opensansitalic-webfont.svg#open_sansitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans Bold';
+  src: url($Path_fonts_opensans + 'opensansbold-webfont.eot');
+  src: url($Path_fonts_opensans + 'opensansbold-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_opensans + 'opensansbold-webfont.woff2') format('woff2'),
+  url($Path_fonts_opensans + 'opensansbold-webfont.woff') format('woff'),
+  url($Path_fonts_opensans + 'opensansbold-webfont.ttf') format('truetype'),
+  url($Path_fonts_opensans + 'opensansbold-webfont.svg#open_sansbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans Bold Italic';
+  src: url($Path_fonts_opensans + 'opensansbolditalic-webfont.eot');
+  src: url($Path_fonts_opensans + 'opensansbolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_opensans + 'opensansbolditalic-webfont.woff2') format('woff2'),
+  url($Path_fonts_opensans + 'opensansbolditalic-webfont.woff') format('woff'),
+  url($Path_fonts_opensans + 'opensansbolditalic-webfont.ttf') format('truetype'),
+  url($Path_fonts_opensans + 'opensansbolditalic-webfont.svg#open_sansbold_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url($Path_fonts_opensans + 'opensanslight-webfont.eot');
+  src: url($Path_fonts_opensans + 'opensanslight-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_opensans + 'opensanslight-webfont.woff2') format('woff2'),
+  url($Path_fonts_opensans + 'opensanslight-webfont.woff') format('woff'),
+  url($Path_fonts_opensans + 'opensanslight-webfont.ttf') format('truetype'),
+  url($Path_fonts_opensans + 'opensanslight-webfont.svg#open_sans_lightregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Light Italic';
+  src: url($Path_fonts_opensans + 'opensanslightitalic-webfont.eot');
+  src: url($Path_fonts_opensans + 'opensanslightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_opensans + 'opensanslightitalic-webfont.woff2') format('woff2'),
+  url($Path_fonts_opensans + 'opensanslightitalic-webfont.woff') format('woff'),
+  url($Path_fonts_opensans + 'opensanslightitalic-webfont.ttf') format('truetype'),
+  url($Path_fonts_opensans + 'opensanslightitalic-webfont.svg#open_sans_lightitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Extra Bold';
+  src: url($Path_fonts_opensans + 'opensansextrabold-webfont.eot');
+  src: url($Path_fonts_opensans + 'opensansextrabold-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_opensans + 'opensansextrabold-webfont.woff2') format('woff2'),
+  url($Path_fonts_opensans + 'opensansextrabold-webfont.woff') format('woff'),
+  url($Path_fonts_opensans + 'opensansextrabold-webfont.ttf') format('truetype'),
+  url($Path_fonts_opensans + 'opensansextrabold-webfont.svg#open_sans_extraboldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Extra Bold Italic';
+  src: url($Path_fonts_opensans + 'opensansextrabolditalic-webfont.eot');
+  src: url($Path_fonts_opensans + 'opensansextrabolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_opensans + 'opensansextrabolditalic-webfont.woff2') format('woff2'),
+  url($Path_fonts_opensans + 'opensansextrabolditalic-webfont.woff') format('woff'),
+  url($Path_fonts_opensans + 'opensansextrabolditalic-webfont.ttf') format('truetype'),
+  url($Path_fonts_opensans + 'opensansextrabolditalic-webfont.svg#open_sans_extrabolditalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Semi Bold';
+  src: url($Path_fonts_opensans + 'opensanssemibold-webfont.eot');
+  src: url($Path_fonts_opensans + 'opensanssemibold-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_opensans + 'opensanssemibold-webfont.woff2') format('woff2'),
+  url($Path_fonts_opensans + 'opensanssemibold-webfont.woff') format('woff'),
+  url($Path_fonts_opensans + 'opensanssemibold-webfont.ttf') format('truetype'),
+  url($Path_fonts_opensans + 'opensanssemibold-webfont.svg#open_sans_semiboldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Semi Bold Italic';
+  src: url($Path_fonts_opensans + 'opensanssemibolditalic-webfont.eot');
+  src: url($Path_fonts_opensans + 'opensanssemibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url($Path_fonts_opensans + 'opensanssemibolditalic-webfont.woff2') format('woff2'),
+  url($Path_fonts_opensans + 'opensanssemibolditalic-webfont.woff') format('woff'),
+  url($Path_fonts_opensans + 'opensanssemibolditalic-webfont.ttf') format('truetype'),
+  url($Path_fonts_opensans + 'opensanssemibolditalic-webfont.svg#open_sans_semibolditalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
