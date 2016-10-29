@@ -1,77 +1,77 @@
-/* =========== © 2016 Centroarts.com =========== */
-
-/* Сброс */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block } body { line-height: 1 } ol, ul { list-style: none } blockquote, q { quotes: none } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none } table { border-collapse: collapse; border-spacing: 0 }
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary { display: block; }
-
-html { height: 100%; min-height: 100%; }
-body { min-height: 100%; }
-html, html a { -webkit-font-smoothing: antialiased; }
-//Настройка основной типографики 2
-body, select, input, textarea, button {
-  //font: normal 14px/1.5 Arial, Helvetica, sans-serif;
-  color: #353535;
-  outline: none;
-}
-
-
-
-/* Заголовки H1-6 */
-h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
-  margin: 2em 0 .6em 0;
-  letter-spacing: normal;
-  line-height: normal;
-  //font-weight: bold;
-  text-rendering: optimizeLegibility;
-}
-h1, .h1 { font-size: 23px; }
-h2, .h2 { font-size: 21px; }
-h3, .h3 { font-size: 20px; }
-h4, .h4 { font-size: 18px; }
-h5, .h5 { font-size: 16px; }
-
-$color_grey_1: #444444;
-$color_grey_2: #777777;
-
-
-$color-black_st-1: #202020;
-$color-red_st-1: #ee2f77;
-$color-grey_st-1: #cecece;
-$color-white_st-1: white;
-$color-bg_st-1: #F5F5F5;
-
-$padding_st-1: 10px;
-
-.font_test_oswaldregular {
-  font: bold 16px/normal 'Oswald';
-  text-transform: uppercase;
-  color: $color-red_st-1;
-  i {
-    font-size: 72px;
-    color: #00aa55;
-  }
-}
-
-#wrapper {
-  background-color: $color-bg_st-1;
-  a {
-    outline: none;
-    color: #00aa55;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: none;
-    color: $color-white_st-1;
-  }
-  a img { border: 0 none; }
-  a > img { vertical-align: center; }
-}
-.padding_plus {
-  padding: 0 30px;
-}
-.color_colum {
-  background-color: lightgoldenrodyellow;
-}
+///* =========== © 2016 Centroarts.com =========== */
+//
+///* Сброс */
+//html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block } body { line-height: 1 } ol, ul { list-style: none } blockquote, q { quotes: none } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none } table { border-collapse: collapse; border-spacing: 0 }
+//article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary { display: block; }
+//
+//html { height: 100%; min-height: 100%; }
+//body { min-height: 100%; }
+//html, html a { -webkit-font-smoothing: antialiased; }
+////Настройка основной типографики 2
+//body, select, input, textarea, button {
+//  //font: normal 14px/1.5 Arial, Helvetica, sans-serif;
+//  color: #353535;
+//  outline: none;
+//}
+//
+//
+//
+///* Заголовки H1-6 */
+//h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
+//  margin: 2em 0 .6em 0;
+//  letter-spacing: normal;
+//  line-height: normal;
+//  //font-weight: bold;
+//  text-rendering: optimizeLegibility;
+//}
+//h1, .h1 { font-size: 23px; }
+//h2, .h2 { font-size: 21px; }
+//h3, .h3 { font-size: 20px; }
+//h4, .h4 { font-size: 18px; }
+//h5, .h5 { font-size: 16px; }
+//
+//$color_grey_1: #444444;
+//$color_grey_2: #777777;
+//
+//
+//$color-black_st-1: #202020;
+//$color-red_st-1: #ee2f77;
+//$color-grey_st-1: #cecece;
+//$color-white_st-1: white;
+//$color-bg_st-1: #F5F5F5;
+//
+//$padding_st-1: 10px;
+//
+//.font_test_oswaldregular {
+//  font: bold 16px/normal 'Oswald';
+//  text-transform: uppercase;
+//  color: $color-red_st-1;
+//  i {
+//    font-size: 72px;
+//    color: #00aa55;
+//  }
+//}
+//
+//#wrapper {
+//  background-color: $color-bg_st-1;
+//  a {
+//    outline: none;
+//    color: #00aa55;
+//    text-decoration: none;
+//  }
+//  a:hover {
+//    text-decoration: none;
+//    color: $color-white_st-1;
+//  }
+//  a img { border: 0 none; }
+//  a > img { vertical-align: center; }
+//}
+//.padding_plus {
+//  padding: 0 30px;
+//}
+//.color_colum {
+//  background-color: lightgoldenrodyellow;
+//}
 
 .flex-container {
   display:flex;
@@ -81,171 +81,177 @@ $padding_st-1: 10px;
   align-content: flex-start;
   align-items: flex-start;
 }
-
+.img_s {
+  width: 100px;
+  height: auto;
+}
 .flex-items {
-  //width: 100px;
-  //height: 250px;
-  //background-color: rosybrown;
+  width: 100px;
+  height: 250px;
+  background-color: rosybrown;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 0;
   margin: 5px;
+  //.img {
+  //  width: 100px;
+  //  height: auto;
+  //}
+  //width: 100px;
+  //height: 0;
   //padding: 0 50px;
-  img {
-    width: 100px;
-    height: 0;
-  }
+
 }
-
-.block {
-  background-color: $color-white_st-1;
-  border: 1px solid $color-grey_st-1;
-  border-radius: 4px;
-  margin-bottom: 15px;
-  .bl_header {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-
-    border-bottom: 1px solid $color-grey_st-1;
-    .head-txt {
-      //font: bold 16px/normal 'Oswald';
-      font-family: 'Oswald-Light', sans-serif;
-      font-size: 18px;
-      font-weight: bold;
-      color: $color-black_st-1;
-      text-transform: uppercase;
-      padding: 12px $padding_st-1 7px $padding_st-1;
-      span {
-        color: $color-red_st-1;
-      }
-    }
-    .head-ico {
-      padding-right: $padding_st-1;
-      i {
-        font-size: 50px;
-      }
-    }
-  }
-  .bl_content {
-    text-align: center;
-    margin: 5px;
-    img {
-      width: 100%;
-      height: auto;
-    }
-    //padding: 0 $padding-st-1;
-    //color: limegreen;
-  }
-  .bl_foter {
-    padding: 0 $padding_st-1;
-    color: blue;
-  }
-}
-
-.block-content {
-  .content-img {
-    //padding: 200px 0;
-    background-color: $color-white_st-1;
-    border: 1px solid $color-grey_st-1;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    padding: 5px;
-    img {
-      width: 100%;
-      height: auto;
-    }
-
-  }
-}
-
-
-.bl_content_category {
-  li {
-    border-bottom: 1px solid red;
-    background-color: $color-white_st-1;
-    padding: 10px $padding_st-1;
-  }
-  li:hover {
-    background-color: $color_grey_2;
-    cursor: pointer;
-  }
-  i {
-    font-size: 10px;
-    padding-right: 5px;
-  }
-}
-
-//.addcomment h3 { margin: .3em 0 .6em 0; }
 //
+//.block {
+//  background-color: $color-white_st-1;
+//  border: 1px solid $color-grey_st-1;
+//  border-radius: 4px;
+//  margin-bottom: 15px;
+//  .bl_header {
+//    display:flex;
+//    flex-direction: row;
+//    flex-wrap: wrap;
+//    justify-content: space-between;
+//    align-content: center;
+//    align-items: center;
 //
-//.affix {
-//  top: 0;
-//}
-//@media (max-width: 1200px) {
-//  .affix {
-//    position: static;
+//    border-bottom: 1px solid $color-grey_st-1;
+//    .head-txt {
+//      //font: bold 16px/normal 'Oswald';
+//      font-family: 'Oswald-Light', sans-serif;
+//      font-size: 18px;
+//      font-weight: bold;
+//      color: $color-black_st-1;
+//      text-transform: uppercase;
+//      padding: 12px $padding_st-1 7px $padding_st-1;
+//      span {
+//        color: $color-red_st-1;
+//      }
+//    }
+//    .head-ico {
+//      padding-right: $padding_st-1;
+//      i {
+//        font-size: 50px;
+//      }
+//    }
+//  }
+//  .bl_content {
+//    text-align: center;
+//    margin: 5px;
+//    img {
+//      width: 100%;
+//      height: auto;
+//    }
+//    //padding: 0 $padding-st-1;
+//    //color: limegreen;
+//  }
+//  .bl_foter {
+//    padding: 0 $padding_st-1;
+//    color: blue;
 //  }
 //}
-
-
-#header {
-  text-align: center;
-  padding: 50px 0;
-  background: darkgrey;
-}
-.col-left {
-  background: lightblue;
-}
-.col-center {
-  background: #b1cbc2;
-}
-.col-reight {
-  background: lightgrey;
-  padding-bottom: 750px;
-  position: fixed; /* Фиксированное положение */
-}
-
-.block_new_post {
-  /*text-align: center;*/
-}
-.new_post_img img {
-  /*width: 50%;*/
-}
-.short-story {
-  width: 750px;
-  /*height: 250px;*/
-  background: burlywood;
-  margin-right: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.short-story_small {
-  float: left;
-  width: 240px;
-  height: 300px;
-  background: darkgrey;
-  margin-right: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.short-story_small:nth-child(3n+3) {
-  margin-right: 0;
-  background: white;
-}
-
-#footer {
-  text-align: center;
-  background: darkgrey;
-  padding: 50px 0;
-  margin-bottom: 0;
-}
+//
+//.block-content {
+//  .content-img {
+//    //padding: 200px 0;
+//    background-color: $color-white_st-1;
+//    border: 1px solid $color-grey_st-1;
+//    border-radius: 4px;
+//    margin-bottom: 15px;
+//    padding: 5px;
+//    img {
+//      width: 100%;
+//      height: auto;
+//    }
+//
+//  }
+//}
+//
+//
+//.bl_content_category {
+//  li {
+//    border-bottom: 1px solid red;
+//    background-color: $color-white_st-1;
+//    padding: 10px $padding_st-1;
+//  }
+//  li:hover {
+//    background-color: $color_grey_2;
+//    cursor: pointer;
+//  }
+//  i {
+//    font-size: 10px;
+//    padding-right: 5px;
+//  }
+//}
+//
+////.addcomment h3 { margin: .3em 0 .6em 0; }
+////
+////
+////.affix {
+////  top: 0;
+////}
+////@media (max-width: 1200px) {
+////  .affix {
+////    position: static;
+////  }
+////}
+//
+//
+//#header {
+//  text-align: center;
+//  padding: 50px 0;
+//  background: darkgrey;
+//}
+//.col-left {
+//  background: lightblue;
+//}
+//.col-center {
+//  background: #b1cbc2;
+//}
+//.col-reight {
+//  background: lightgrey;
+//  padding-bottom: 750px;
+//  position: fixed; /* Фиксированное положение */
+//}
+//
+//.block_new_post {
+//  /*text-align: center;*/
+//}
+//.new_post_img img {
+//  /*width: 50%;*/
+//}
+//.short-story {
+//  width: 750px;
+//  /*height: 250px;*/
+//  background: burlywood;
+//  margin-right: 15px;
+//  margin-top: 10px;
+//  margin-bottom: 10px;
+//  text-align: center;
+//}
+//
+//.short-story_small {
+//  float: left;
+//  width: 240px;
+//  height: 300px;
+//  background: darkgrey;
+//  margin-right: 15px;
+//  margin-top: 10px;
+//  margin-bottom: 10px;
+//  text-align: center;
+//}
+//.short-story_small:nth-child(3n+3) {
+//  margin-right: 0;
+//  background: white;
+//}
+//
+//#footer {
+//  text-align: center;
+//  background: darkgrey;
+//  padding: 50px 0;
+//  margin-bottom: 0;
+//}
 /* Частые стили */
 /*.strike { text-decoration: line-through; }*/
 /*.nobr { white-space: nowrap; }*/
