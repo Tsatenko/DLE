@@ -26,34 +26,34 @@
     CELEBRITY TAPES
     <i class="fa fa-sign-language" aria-hidden="true"></i>
 </div>
-<div class="flex-container">
-    <div class="flex-items">
-        1
-        <img src="/uploads/img_02.jpg">
-    </div>
-    <div class="flex-items">
-        <img src="/uploads/img_02.jpg">
-    </div>
-    <div class="flex-items">
-        <img src="/uploads/img_02.jpg">
-    </div>
-    <div class="flex-items">
-        <img src="/uploads/img_02.jpg">
-    </div>
-    <div class="flex-items">
-        5
-    </div>
-    <div class="flex-items">
-        6
-    </div>
-    <div class="flex-items">
-        7
-    </div>
-    <div class="flex-items">
-        8
-    </div>
+{*<div class="flex-container">*}
+    {*<div class="flex-items">*}
+        {*1*}
+        {*<img src="/uploads/img_02.jpg">*}
+    {*</div>*}
+    {*<div class="flex-items">*}
+        {*<img src="/uploads/img_02.jpg">*}
+    {*</div>*}
+    {*<div class="flex-items">*}
+        {*<img src="/uploads/img_02.jpg">*}
+    {*</div>*}
+    {*<div class="flex-items">*}
+        {*<img src="/uploads/img_02.jpg">*}
+    {*</div>*}
+    {*<div class="flex-items">*}
+        {*5*}
+    {*</div>*}
+    {*<div class="flex-items">*}
+        {*6*}
+    {*</div>*}
+    {*<div class="flex-items">*}
+        {*7*}
+    {*</div>*}
+    {*<div class="flex-items">*}
+        {*8*}
+    {*</div>*}
 
-</div>
+{*</div>*}
 <div id="wrapper">
     <div id="header">
         HEADER
@@ -164,7 +164,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="block">
                     <div class="bl_header">
                         <div class="head-txt">BUSTY <span>MODELS</span></div>
@@ -183,7 +182,6 @@
                     </div>
                 </div>
                 <div class="bl_content">
-
                 </div>
 
                 <div class="block">
@@ -222,61 +220,72 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
         <div class="row">
-            <div class="flex-container">
-                <div class="flex-items">
-                    1
-                    <img src="/uploads/img_02.jpg">
+            <div class="block-content-small">
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_01.jpg">
                 </div>
-                <div class="flex-items">
-                    <img src="/uploads/img_02.jpg">
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_02.jpg">
                 </div>
-                <div class="flex-items">
-                    <img src="/uploads/img_02.jpg">
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_03.jpg">
                 </div>
-                <div class="flex-items">
-                    <img src="/uploads/img_02.jpg">
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_04.jpg">
                 </div>
-                <div class="flex-items">
-5
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_05.jpg">
                 </div>
-                <div class="flex-items">
-6
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_06.jpg">
                 </div>
-                <div class="flex-items">
-7
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_07.jpg">
                 </div>
-                <div class="flex-items">
-8
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_08.jpg">
                 </div>
-
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_09.jpg">
+                </div>
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_10.jpg">
+                </div>
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_11.jpg">
+                </div>
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_12.jpg">
+                </div>
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_13.jpg">
+                </div>
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_14.jpg">
+                </div>
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_15.jpg">
+                </div>
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_16.jpg">
+                </div>
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_17.jpg">
+                </div>
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_18.jpg">
+                </div>
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_19.jpg">
+                </div>
+                <div class="content-small-item">
+                    <img class="img_small" src="/uploads/small/img_20.jpg">
+                </div>
             </div>
-
-            {*<div class="short-story_small">*}
-                {*111*}
-            {*</div>*}
-            {*<div class="short-story_small">*}
-                {*111*}
-            {*</div>*}
-            {*<div class="short-story_small">*}
-                {*111*}
-            {*</div>*}
-            {*<div class="short-story_small">*}
-                {*111*}
-            {*</div>*}
-            {*<div class="short-story_small">*}
-                {*111*}
-            {*</div>*}
-            {*<div class="short-story_small">*}
-                {*111*}
-            {*</div>*}
-
         </div>
-
     </div>
 <br>
     <br>
@@ -355,6 +364,11 @@
     <div id="footer">FOOTER</div>
 </div>
 </body>
+</html>
+
+
+
+
 {*<body>*}
 {*[not-available=lostpassword|register]*}
 {*<div class="page[available=showfull] showfull[/available]">*}
@@ -493,4 +507,4 @@
 {*});*}
 {*</script>*}
 {*</body>*}
-</html>
+

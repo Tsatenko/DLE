@@ -265,9 +265,8 @@ h5, .h5 {
   flex-shrink: 0;
   flex-basis: 0;
   margin: 5px; }
-  .flex-items img {
-    width: 100px;
-    height: 0; }
+  .flex-items .img_small {
+    width: 280px; }
 
 .block {
   background-color: white;
@@ -314,6 +313,19 @@ h5, .h5 {
   .block-content .content-img img {
     width: 100%;
     height: auto; }
+
+.block-content-small {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start; }
+
+.content-small-item {
+  margin: 5px; }
+  .content-small-item .img_small {
+    width: 280px; }
 
 .bl_content_category li {
   border-bottom: 1px solid red;
