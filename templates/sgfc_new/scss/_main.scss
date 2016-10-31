@@ -56,7 +56,10 @@ $color_grey_2: #777777;
 $color-black_st-1: #202020;
 $color-red_st-1: #ee2f77;
 $color-red-hover_st-1: #eb4d89;
-$color-red-focus_st-1: #f582ad;
+// 35% прозрачности от $color-red-focus_st-1: #f9b6d0;
+$color-red-focus_st-1: #f9b6d0;
+// 60% прозрачности от $color-red_st-1: #ee2f77;
+//$color-red-focus_st-1: #f582ad;
 $color-grey_st-1: #cecece;
 $color-white_st-1: white;
 $color-bg_st-1: #F5F5F5;
@@ -85,6 +88,7 @@ input[type="text"] {
   height: 46px;
   border: 1px solid $color-grey_st-1;
 }
+
 input[type="text"]:focus {
   border-color: $color-red-focus_st-1;
 }
