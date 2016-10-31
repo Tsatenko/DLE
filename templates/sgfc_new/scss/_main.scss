@@ -1,7 +1,26 @@
 /* =========== © 2016 Centroarts.com =========== */
 
 /* Сброс */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block } body { line-height: 1 } ol, ul { list-style: none } blockquote, q { quotes: none } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none } table { border-collapse: collapse; border-spacing: 0 }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video
+{ margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
+section { display: block }
+
+body { line-height: 1 }
+
+ol, ul { list-style: none }
+
+blockquote, q { quotes: none }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none }
+
+table { border-collapse: collapse; border-spacing: 0 }
+
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary { display: block; }
 
 html { height: 100%; min-height: 100%; }
@@ -10,8 +29,8 @@ html, html a { -webkit-font-smoothing: antialiased; }
 //Настройка основной типографики 2
 body, select, input, textarea, button {
   //font: normal 14px/1.5 Arial, Helvetica, sans-serif;
-  color: #353535;
-  outline: none;
+  //color: #353535;
+  //outline: none;
 }
 
 
@@ -36,12 +55,53 @@ $color_grey_2: #777777;
 
 $color-black_st-1: #202020;
 $color-red_st-1: #ee2f77;
+$color-red-hover_st-1: #eb4d89;
+$color-red-focus_st-1: #f582ad;
 $color-grey_st-1: #cecece;
 $color-white_st-1: white;
 $color-bg_st-1: #F5F5F5;
 
 $padding_st-1: 10px;
 
+.position-input {
+  text-align: center;
+}
+.button_st-1 {
+  background-color: $color-red_st-1;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 35px 8px;
+  color: $color-white_st-1;
+  font-size: 14px;
+  font-family: Oswald;
+  text-transform: uppercase;
+}
+.button_st-1:hover {
+  background-color: $color-red-hover_st-1;
+}
+//---------- Стиль для Поля ввода (прербивание стиля) -----------
+input[type="text"] {
+  width: 100%;
+  height: 46px;
+  border: 1px solid $color-grey_st-1;
+}
+input[type="text"]:focus {
+  border-color: $color-red-focus_st-1;
+}
+//input[type="text"] {
+  //line-height: 22px;
+  //padding: 10px;
+  //vertical-align: middle;
+  //border-radius: 2px;
+  //background: #fff;
+  //border: 2px solid #e8e8e8;
+  //-webkit-transition: border 0.2s linear 0s;
+  //transition: border 0.2s linear 0s;
+  //-moz-box-sizing: border-box;
+  //-webkit-box-sizing: border-box;
+  //box-sizing: border-box;
+//}
+// ---------------------------------------------------------------
 .font_test_oswaldregular {
   font: bold 16px/normal 'Oswald';
   text-transform: uppercase;
@@ -51,7 +111,28 @@ $padding_st-1: 10px;
     color: #00aa55;
   }
 }
-
+//.holder{
+//  position:relative;
+//  width:300px;
+//  height:400px;
+//  //background:#ff6600;
+//  margin:100px auto;
+//}
+//.block{
+//  position:absolute;
+//  left:0;
+//  bottom:0;
+//  right:0;
+//  top:0;
+//  //background:rgba(255,255,255, 0.7);
+//  background:#ff6600;
+//  padding:5px;
+//  display:none;
+//}
+//.holder:hover
+//.block{
+//  display:block;
+//}
 #wrapper {
   background-color: $color-bg_st-1;
   a {
@@ -132,8 +213,11 @@ $padding_st-1: 10px;
     }
   }
   .bl_content {
-    text-align: center;
+    text-align: left;
     margin: 5px;
+    font-size: 12px;
+    //font-family: "OpenSans";
+    font-family: Arial;
     img {
       width: 100%;
       height: auto;
@@ -143,7 +227,7 @@ $padding_st-1: 10px;
   }
   .bl_foter {
     padding: 0 $padding_st-1;
-    color: blue;
+    color: $color-grey_st-1;
   }
 }
 .block-content {
@@ -172,12 +256,14 @@ $padding_st-1: 10px;
 .content-small-item {
   margin: 5px;
   .img_small {
-    //width: 224px;
-    width: 280px;
+    width: 224px;
+    //width: 280px;
   }
 }
 
+.bl_content {
 
+}
 .bl_content_category {
   li {
     border-bottom: 1px solid red;
@@ -193,6 +279,7 @@ $padding_st-1: 10px;
     padding-right: 5px;
   }
 }
+
 
 //.addcomment h3 { margin: .3em 0 .6em 0; }
 //

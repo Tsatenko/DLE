@@ -26,6 +26,12 @@
     {*CELEBRITY TAPES*}
     {*<i class="fa fa-sign-language" aria-hidden="true"></i>*}
 {*</div>*}
+{*<div class="holder">*}
+    {*<h2>Пример222</h2>*}
+    {*<div class="block">*}
+        {*<i class="fa fa-sign-language" aria-hidden="true"></i>*}
+    {*</div>*}
+{*</div>*}
 
 <div id="wrapper">
     <div id="header">
@@ -107,13 +113,13 @@
                         </div>
                         <div class="content-footer">Lorem Ipsum</div>
                     </div>
-                    <div class="block-content">
-                        <div class="content-title">Head Semple Text</div>
-                        <div class="content-img" >
-                            <img src="/uploads/img_05_h.jpg">
-                        </div>
-                        <div class="content-footer">Lorem Ipsum</div>
-                    </div>
+                    {*<div class="block-content">*}
+                        {*<div class="content-title">Head Semple Text</div>*}
+                        {*<div class="content-img" >*}
+                            {*<img src="/uploads/img_05_h.jpg">*}
+                        {*</div>*}
+                        {*<div class="content-footer">Lorem Ipsum</div>*}
+                    {*</div>*}
                 </div>
 
             </div>
@@ -122,24 +128,41 @@
                 <br>
                 <div class="block">
                     <div class="bl_header">
-                        <div class="head-txt">Celebrity <span>Tapes</span></div>
+                        <div class="head-txt">Text <span>Sample</span></div>
                         <div class="head-ico">
                             <img src="/uploads/ico_1.png">
                             {*<i class="fa fa-plus-square-o"></i>*}
                         </div>
                     </div>
                     <div class="bl_content">
-                        <img src="/uploads/small/img_01_h.jpg">
+                        <a href="#">
+                            <img src="/uploads/small/img_01_h.jpg">
+                        </a>
                     </div>
                     <div class="bl_foter">
                         <div>
-                            footer
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-thumbs-o-up"></i>
+                            <i class="fa fa-thumbs-o-down"></i>
+                            <i class="fa fa-calendar-o"></i>
+                            <i class="fa fa-calendar"></i>
+                            <i class="fa fa-clock-o"></i>
+                            <i class="fa fa-video-camera"></i>
+                            <i class="fa fa-camera"></i>
+                            <i class="fa fa-heart-o"></i>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-comments-o"></i>
+                            <i class="fa fa-comment-o"></i>
+                            <i class="fa fa-commenting"></i>
+                            <i class="fa fa-comments"></i>
+                            <i class="fa fa-comment"></i>
+                            <i class="fa fa-share-alt"></i>
                         </div>
                     </div>
                 </div>
                 <div class="block">
                     <div class="bl_header">
-                        <div class="head-txt">BUSTY <span>MODELS</span></div>
+                        <div class="head-txt">Lorem <span>Ipsum</span></div>
                         <div class="head-ico">
                             <img src="/uploads/ico_1.png">
                             {*<i class="fa fa-plus-square-o"></i>*}
@@ -185,6 +208,35 @@
                         {*<i class="fa fa-plus fa-stack-1x"></i>*}
                         {*</span>*}
                         {*fa-twitter on fa-square-o<br>*}
+                    </div>
+                    <div class="bl_foter">
+                        <div>
+                            footer
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="bl_header">
+                        <div class="head-txt">Sample <span>Text</span></div>
+                        <div class="head-ico">
+                            <img src="/uploads/ico_1.png">
+                            {*<i class="fa fa-plus-square-o"></i>*}
+                        </div>
+                    </div>
+                    <div class="bl_content">
+                        <p>
+                            Lorem ipsum dolor sit amet, an eum nisl consul tractatos,
+                            cu indoctum temporibus qui. Cetero albucius pro te, eum
+                            ea aperiam omittantur, mel at nulla suavitate.
+                        </p>
+                        <div class="position-input">
+                            <input type="text" name="input-text_name" placeholder="Sample Text">
+                            <br>
+                            <br>
+                            <input class="button_st-1" type="button" name="button_name" value="SampleText" alt="Button">
+                        </div>
+
+
                     </div>
                     <div class="bl_foter">
                         <div>

@@ -157,7 +157,11 @@
   font-style: normal; }
 /* =========== ┬й 2016 Centroarts.com =========== */
 /* ╨б╨▒╤А╨╛╤Б */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -165,7 +169,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
+section {
   display: block; }
 
 body {
@@ -198,10 +203,6 @@ body {
 html, html a {
   -webkit-font-smoothing: antialiased; }
 
-body, select, input, textarea, button {
-  color: #353535;
-  outline: none; }
-
 /* ╨Ч╨░╨│╨╛╨╗╨╛╨▓╨║╨╕ H1-6 */
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   margin: 2em 0 .6em 0;
@@ -223,6 +224,30 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 16px; }
+
+.position-input {
+  text-align: center; }
+
+.button_st-1 {
+  background-color: #ee2f77;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 35px 8px;
+  color: white;
+  font-size: 14px;
+  font-family: Oswald;
+  text-transform: uppercase; }
+
+.button_st-1:hover {
+  background-color: #eb4d89; }
+
+input[type="text"] {
+  width: 100%;
+  height: 46px;
+  border: 1px solid #cecece; }
+
+input[type="text"]:focus {
+  border-color: #f582ad; }
 
 .font_test_oswaldregular {
   font: bold 16px/normal 'Oswald';
@@ -295,14 +320,16 @@ h5, .h5 {
       .block .bl_header .head-ico i {
         font-size: 50px; }
   .block .bl_content {
-    text-align: center;
-    margin: 5px; }
+    text-align: left;
+    margin: 5px;
+    font-size: 12px;
+    font-family: Arial; }
     .block .bl_content img {
       width: 100%;
       height: auto; }
   .block .bl_foter {
     padding: 0 10px;
-    color: blue; }
+    color: #cecece; }
 
 .block-content .content-img {
   background-color: white;
@@ -325,7 +352,7 @@ h5, .h5 {
 .content-small-item {
   margin: 5px; }
   .content-small-item .img_small {
-    width: 280px; }
+    width: 224px; }
 
 .bl_content_category li {
   border-bottom: 1px solid red;
