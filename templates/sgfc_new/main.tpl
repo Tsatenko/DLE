@@ -22,38 +22,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-<div class="font_test_oswaldregular">
-    CELEBRITY TAPES
-    <i class="fa fa-sign-language" aria-hidden="true"></i>
-</div>
-{*<div class="flex-container">*}
-    {*<div class="flex-items">*}
-        {*1*}
-        {*<img src="/uploads/img_02.jpg">*}
-    {*</div>*}
-    {*<div class="flex-items">*}
-        {*<img src="/uploads/img_02.jpg">*}
-    {*</div>*}
-    {*<div class="flex-items">*}
-        {*<img src="/uploads/img_02.jpg">*}
-    {*</div>*}
-    {*<div class="flex-items">*}
-        {*<img src="/uploads/img_02.jpg">*}
-    {*</div>*}
-    {*<div class="flex-items">*}
-        {*5*}
-    {*</div>*}
-    {*<div class="flex-items">*}
-        {*6*}
-    {*</div>*}
-    {*<div class="flex-items">*}
-        {*7*}
-    {*</div>*}
-    {*<div class="flex-items">*}
-        {*8*}
-    {*</div>*}
-
+{*<div class="font_test_oswaldregular">*}
+    {*CELEBRITY TAPES*}
+    {*<i class="fa fa-sign-language" aria-hidden="true"></i>*}
 {*</div>*}
+
 <div id="wrapper">
     <div id="header">
         HEADER
@@ -73,7 +46,7 @@
                         </div>
                     </div>
                     <div class="bl_content">
-                        <img src="/uploads/img_02.jpg">
+                        <img src="/uploads/small/img_01_h.jpg">
                     </div>
                     <div class="bl_foter">
                         <div>
@@ -90,7 +63,7 @@
                         </div>
                     </div>
                     <div class="bl_content">
-                        <img src="/uploads/img_01.jpg">
+                        <img src="/uploads/small/img_01_h.jpg">
                     </div>
                     <div class="bl_foter">
                         <div>
@@ -107,7 +80,7 @@
                         </div>
                     </div>
                     <div class="bl_content">
-                        <img src="/uploads/img_04_g.jpg">
+                        <img src="/uploads/small/img_01_h.jpg">
                     </div>
                     <div class="bl_foter">
                         <div>
@@ -123,21 +96,21 @@
                     <div class="block-content">
                         <div class="content-title">Head Semple Text</div>
                         <div class="content-img" >
-                            <img src="/uploads/img_05.jpg">
+                            <img src="/uploads/img_05_h.jpg">
                         </div>
                         <div class="content-footer">Lorem Ipsum</div>
                     </div>
                     <div class="block-content">
                         <div class="content-title">Head Semple Text</div>
                         <div class="content-img" >
-                            <img src="/uploads/img_06.jpg">
+                            <img src="/uploads/img_05_h.jpg">
                         </div>
                         <div class="content-footer">Lorem Ipsum</div>
                     </div>
                     <div class="block-content">
                         <div class="content-title">Head Semple Text</div>
                         <div class="content-img" >
-                            <img src="/uploads/img_07.jpg">
+                            <img src="/uploads/img_05_h.jpg">
                         </div>
                         <div class="content-footer">Lorem Ipsum</div>
                     </div>
@@ -156,7 +129,7 @@
                         </div>
                     </div>
                     <div class="bl_content">
-                        <img src="/uploads/img_01.jpg">
+                        <img src="/uploads/small/img_01_h.jpg">
                     </div>
                     <div class="bl_foter">
                         <div>
@@ -173,7 +146,7 @@
                         </div>
                     </div>
                     <div class="bl_content">
-                        <img src="/uploads/img_02.jpg">
+                        <img src="/uploads/small/img_01_h.jpg">
                     </div>
                     <div class="bl_foter">
                         <div>
@@ -183,7 +156,6 @@
                 </div>
                 <div class="bl_content">
                 </div>
-
                 <div class="block">
                     <div class="bl_header">
                         {*<div class="t_h4">CELEBRITY <span>TAPES</span></div>*}
@@ -225,64 +197,64 @@
         <div class="row">
             <div class="block-content-small">
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_01.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_02.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_03.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_04.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_05.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_06.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_07.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_08.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_09.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_10.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_11.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_12.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_13.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_14.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_15.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_16.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_17.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_18.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_19.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
                 <div class="content-small-item">
-                    <img class="img_small" src="/uploads/small/img_20.jpg">
+                    <img class="img_small" src="/uploads/small/img_01_h.jpg">
                 </div>
             </div>
         </div>
