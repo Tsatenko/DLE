@@ -1,0 +1,141 @@
+$(document).on("ready", function(){
+
+	//menu drop long
+	$(".btn_cat").on("click", function(){
+		var $this = $(this).parents(".header");
+		if($this.hasClass("open_categories")){
+			$this.removeClass("open_categories");
+		} else {
+			$this.addClass("open_categories");
+		}
+	});
+	$('body').on("click", function(event) { 
+		if(!$(event.target).closest('.btn_cat, .dropable').length) {
+			if($('.header').hasClass("open_categories")) {
+				$(".header").removeClass('open_categories');
+			}
+		}
+	});
+
+	//menu drop filter
+	$(".button_filter").on("click", function(){
+		var $this = $(this).parents(".main");
+		if($this.hasClass("open_filter")){
+			$this.removeClass("open_filter");
+		} else {
+			$this.addClass("open_filter");
+		}
+	});
+	$('body').on("click", function(event) { 
+		if(!$(event.target).closest('.button_filter, .filer_drop').length) {
+			if($('.main').hasClass("open_filter")) {
+				$(".main").removeClass('open_filter');
+			}
+		}
+	});
+
+	$.scrollUp({
+		scrollName: 'scrollUp', // Element ID
+		topDistance: '300', // Distance from top before showing element (px)
+		topSpeed: 300, // Speed back to top (ms)
+		animation: 'fade', // Fade, slide, none
+		animationInSpeed: 200, // Animation in speed (ms)
+		animationOutSpeed: 200, // Animation out speed (ms)
+		scrollText: '<i class="icon-arrow-scrollup"></i><span class="scrollUp_text">Up</span>', // Text for element
+		activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+	});
+
+
+	//hide hide
+	$('.hide').hide();
+	$(".btn_heading").on("click", function(){
+		var $this = $(this).parents(".block").find(".intro, .intro_hide");
+		if($this.hasClass("hide")){
+			$this.removeClass("hide").slideDown();
+			$(this).find(".btn_open").addClass("icon-transform");
+		} else {
+			$this.addClass("hide").slideUp();
+			$(this).find(".btn_open").removeClass("icon-transform");
+		}
+	});
+
+	//hide comment show
+	var com = $(".comments").find(".intro_hide").slideUp();
+	$(".btn_comment_show").on("click", function(){
+		var $this = $(this).parents(".comments").find(".intro_hide");
+
+		if($this.hasClass("hide_comment")){
+			// $this.slideUp();
+
+			$this.removeClass("hide_comment").slideDown();
+			$(this).find(".btn_open").addClass("icon-transform");
+		} else {
+
+			$this.addClass("hide_comment").slideUp();
+			$(this).find(".btn_open").removeClass("icon-transform");
+		}
+	});
+
+	//textarea
+	// var textarea = $(".comment_input").find(".intro_hide").slideUp();
+	$(".comment_input").on("click", function(){
+		var $this = $(this);
+		if($this.hasClass("open_textarea")){
+			// $this.removeClass("open_textarea");
+		} else {
+			$this.addClass("open_textarea");
+		}
+	});
+	$('body').on("click", function(event) { 
+		if(!$(event.target).closest('.comment_input').length) {
+			if($('.comment_input').hasClass("open_textarea")) {
+				$(".comment_input").removeClass('open_textarea');
+			}
+		}
+	});
+
+	//
+	CostarredPreview();
+
+
+	$(document).ready(function() { $.fn.bannerResize() });
+	$(window).resize(function() { $.fn.bannerResize() });
+});
+
+
+//tooltip js
+function CostarredPreview(){
+	xOffset = 15;
+	yOffset = 40;
+	$('.model_content a').hover(
+		function(e){
+			$('body').append('<p id="costarred_preview"><img src="'+this.rel+'"></p>');
+			console.log("111");
+			$('#costarred_preview img').load(function(){
+				$('#costarred_preview')
+					.css('top',(e.pageY+xOffset)+'px')
+					.css('left',(e.pageX-yOffset)+'px')
+					.fadeIn();
+			});
+			},
+		function(){
+			$('#costarred_preview').remove();
+		}
+	);
+	$('.model_content a').mousemove(function(e){
+		$('#costarred_preview')
+			.css('top',(e.pageY+xOffset)+'px')
+			.css('left',(e.pageX-yOffset)+'px');
+	});
+};
+
+//
+(function(e) { e.fn.bannerResize = function() {
+        var t = e(".spots .holder").children("div");
+        var n = t.width();
+        var r = n * .8333;
+        var i = n / 300;
+        var s = Math.round((n - n * i) / (2 * i) * -1);
+        t.find("div").removeAttr("style");
+        t.find(".inner").each(function() { e(this).css("-webkit-transform", "scale(" + i + ")").css("-moz-transform-scale(" + i + ")");
+            e(this).css("top", s * .8333).css("left", s) }) } })(jQuery);
