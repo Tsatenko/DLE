@@ -22,17 +22,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-{*<div class="font_test_oswaldregular">*}
-    {*CELEBRITY TAPES*}
-    {*<i class="fa fa-sign-language" aria-hidden="true"></i>*}
-{*</div>*}
-{*<div class="holder">*}
-    {*<h2>Пример222</h2>*}
-    {*<div class="block">*}
-        {*<i class="fa fa-sign-language" aria-hidden="true"></i>*}
-    {*</div>*}
-{*</div>*}
-
 <div id="wrapper">
     <div id="header">
         HEADER
@@ -170,6 +159,17 @@
                     </div>
                     <div class="bl_content">
                         <img src="/uploads/small/img_01_h.jpg">
+                        <br><br>
+                            <div class="thumb">
+                                <a href="#" target="_blank" rel="nofollow" class="th">
+								<span class="wrap_image">
+									<img src="/uploads/small/img_01_h.jpg">
+									<i class="icon-photo"></i>
+								</span>
+                                    <span class="win_desc">Lorem Ipsun Sample Text</span>
+                                    <span class="win_date">Nov 01, 2016</span>
+                                </a>
+                            </div>
                     </div>
                     <div class="bl_foter">
                         <div>

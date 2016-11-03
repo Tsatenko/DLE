@@ -249,6 +249,84 @@ input[type="text"] {
 input[type="text"]:focus {
   border-color: #f9b6d0; }
 
+@font-face {
+  font-family: 'Ico Moon';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#Ico Moon") format("svg"); }
+.icon-photo:before {
+  content: '\e904'; }
+
+.thumb {
+  display: inline-block;
+  font-size: 12px;
+  text-align: left;
+  vertical-align: top; }
+
+.thumb:hover .wrap_image .icon-photo, .wrap_image {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -moz-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  -o-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1); }
+
+.th {
+  position: relative;
+  display: block; }
+
+.th .win_desc {
+  display: none; }
+
+.th:hover .win_desc {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  max-height: 180px;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #06131a;
+  line-height: 18px;
+  -webkit-transition: background .6s, color .6s;
+  -moz-transition: background .6s, color .6s;
+  -o-transition: background .6s, color .6s;
+  transition: background .6s, color .6s;
+  background: rgba(255, 255, 255, 0.8); }
+
+.th .win_date {
+  display: none; }
+
+.th:hover .win_date {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  padding: 6px 10px;
+  color: white;
+  background: rgba(229, 66, 139, 0.8); }
+
+.wrap_image .icon-photo {
+  font-size: 58px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: -webkit-transform .3s;
+  -moz-transition: -moz-transform .3s;
+  -o-transition: -o-transform .3s;
+  transition: transform .3s;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  -moz-transform: translate(-50%, -50%) scale(0);
+  -ms-transform: translate(-50%, -50%) scale(0);
+  -o-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+  color: rgba(255, 255, 255, 0.8); }
+
 .font_test_oswaldregular {
   font: bold 16px/normal 'Oswald';
   text-transform: uppercase;
