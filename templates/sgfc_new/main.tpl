@@ -24,6 +24,7 @@
 <body>
 <div id="wrapper">
     <div id="header">
+
         HEADER
         {changeskin}
     </div>
