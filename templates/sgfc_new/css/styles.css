@@ -241,6 +241,15 @@ h5, .h5 {
 .button_st-1:hover {
   background-color: #eb4d89; }
 
+.test-fixed {
+  position: absolute;
+  top: 280px; }
+
+.bl-content-fix {
+  position: fixed;
+  width: auto;
+  background-color: red; }
+
 input[type="text"] {
   width: 100%;
   height: 46px;

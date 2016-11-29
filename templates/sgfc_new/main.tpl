@@ -114,7 +114,14 @@
 
             </div>
             <div class="col-lg-3 color_colum-">
+                <div class="test-fixed">
+                    <div class="bl-content-fix">
+                        Test Positin fixed
+                    </div>
+
+                </div>
                 <br>
+
                 <br>
                 <div class="block">
                     <div class="bl_header">

@@ -82,6 +82,20 @@ $padding_st-1: 10px;
 .button_st-1:hover {
   background-color: $color-red-hover_st-1;
 }
+
+.test-fixed {
+  position: absolute;
+  //position: fixed;
+  top: 280px;
+  //width: 100%;
+  //margin: 0;
+}
+.bl-content-fix {
+  position: fixed;
+  width: auto;
+  background-color: red;
+  //padding: 50px;
+}
 //---------- Стиль для Поля ввода (прербивание стиля) -----------
 input[type="text"] {
   width: 100%;
